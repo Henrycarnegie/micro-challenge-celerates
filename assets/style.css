@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+/* Root Color */
 :root {
     --Black: #000;
     --Background-Stroke: #232946;
@@ -17,6 +18,7 @@
     --Highlight: #D6B55E;
 }
 
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -26,10 +28,12 @@
 
 h1{
     font-weight: 900;
+    color: var(--Background-Stroke)
 }
 
 h2{
     font-weight: 800;
+    color: var(--Highlight);
 }
 
 h3{
