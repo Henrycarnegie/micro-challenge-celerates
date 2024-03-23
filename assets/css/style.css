@@ -196,15 +196,18 @@ section.new-product {
     text-align: center;
 }
 
-.new-product .navigation-product .nav {
-    width: 26px;
-    height: 23px;
-    margin: 0px 12px;
-    background-color: var(--Question-SkinTest-NotFocused);
-    border-radius: 25px;
+.new-product .nav-product ul li {
+    margin: 0 10px;
 }
 
-.new-product .navigation-product .nav-active {
+.new-product .nav-product ul li a,
+.new-product .nav-product ul li span{
+    border-radius: 100% !important;
+    padding: 12px !important;
+    background-color: var(--Question-SkinTest-NotFocused);
+}
+
+.new-product .nav-product ul li span.active {
     background-color: var(--Background-Stroke);
 }
 
