@@ -237,7 +237,7 @@ section.top-brand {
 
 section.profil {
     background-color: var(--Background-Stroke);
-    height: 500px;
+    max-height: 900px;
     padding-top: 100px;
     padding-bottom: 450px;
     margin-top: 60px;
@@ -269,3 +269,56 @@ section.profil {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+
+/* My-Favorite */
+
+section.my-fav {
+    margin-top: -100px;
+}
+
+.my-fav .container-fav {
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    background: linear-gradient(183deg, rgba(0, 0, 0, 0.10) 2.72%, rgba(255, 255, 255, 0.25) 100%);
+    box-shadow: 0px 0px 30px -1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(30px);
+    padding: 90px 60px;
+}
+
+.my-fav .container-fav .title,
+.my-fav .container-items .colomn-1,
+.my-fav .container-items .colomn-2 {
+    margin-bottom: 95px;
+}
+
+.my-fav .container-fav .title h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--Highlight-Secondary);
+}
+
+.my-fav .container-items .item {
+    position: relative;
+    display: inline-block;
+}
+
+.my-fav .container-items button {
+    border: 0;
+    width: 200px;
+    padding: 3px 10px;
+    color: var(--Background-Stroke);
+    background-color: var(--Button-tertiary);
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 10px; /* Atur jarak dari bawah gambar */
+    left: 50%; /* Atur agar tombol berada di tengah gambar */
+    transform: translateX(-50%); /* Geser tombol ke kiri sejauh setengah lebar tombol */
+}
+
+.my-fav .container-items span {
+    position: absolute;
+    bottom: 210px;
+    left: 93%;
+    transform: translateX(-50%);
+} 
