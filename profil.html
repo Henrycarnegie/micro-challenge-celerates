@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Logo-Website Name -->
+    <link rel="icon" href="assets/images/logo-web.png">
+    <title>Micro-Challenge</title>
+
+    <!-- CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="header fixed-top py-2 ">
+        <nav class="navbar d-flex justify-content-around">
+            <div class="left-container d-flex justify-content-center align-items-center">
+                <img class="me-3" src="assets/images/icon/icon-web.png" alt="logo-web">
+                <div class="searchbar">
+                    <form action="#">
+                        <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+                        <input type="email" class="form-control" id="input-product"
+                            placeholder="Cari produk anda disini ...">
+                    </form>
+                </div>
+            </div>
+            <div class="right-container d-flex justify-content-center align-items-center">
+                <ul class="list-group pe-3">
+                    <li class="list-group-item"><a href="#">Beranda</a></li>
+                    <li class="list-group-item"><a href="#">Tentang Kami</a></li>
+                    <li class="list-group-item"><a href="#">Profil</a></li>
+                    <li class="list-group-item"><a href="#">Test Kulit Anda</a></li>
+                </ul>
+                <button type="button" class="btn btn-primary"><i class="fa-light fa-user"></i>Masuk</button>
+            </div>
+        </nav>
+    </header>
+    <!-- Navigation Bar -->
+
+    <!-- Profil -->
+    <section class="profil">
+        <div class="container">
+            <div class="row">
+                <div class="content col-lg-12 d-flex justify-content-between">
+                    <div class="detail col-lg-6">
+                        <div class="item">
+                            <span>Nama</span>
+                            <input type="text" class="form-control" placeholder="henry carnegie">
+                        </div>
+                        <div class="detail-collapse d-flex justify-content-between">
+                            <div class="item col-lg-6 me-4">
+                                <span>Jenis Kelamin</span>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Pilih</option>
+                                    <option value="1">Laki-laki</option>
+                                    <option value="2">Perempuan</option>
+                                </select>
+                            </div>
+                            <div class="item col-lg-5">
+                                <span>Tipe Kulit</span>
+                                <input type="text" class="form-control" placeholder="Oily" disabled>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span>Umur</span>
+                            <input type="text" class="form-control" placeholder="24">
+                        </div>
+                        <div class="item">
+                            <span>Email</span>
+                            <input type="text" class="form-control" placeholder="henrycarnegie@gmail.com">
+                        </div>
+                        <div class="item">
+                            <span>Password</span>
+                            <input type="text" class="form-control" placeholder="******" disabled>
+                        </div>
+                    </div>
+                    <div class="image col-lg-6 d-flex justify-content-center">
+                        <img src="assets/images/content/3d_profile.png" alt="3d profil image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
