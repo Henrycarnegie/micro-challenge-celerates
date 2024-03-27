@@ -322,3 +322,37 @@ section.my-fav {
     left: 93%;
     transform: translateX(-50%);
 } 
+
+/* FAQ */
+
+section.FAQ {
+    background-image: url(../images/background/bg-faq.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    padding-top: 75px;
+    padding-bottom: 450px;
+    margin-top: 150px;
+}
+
+.FAQ .title h1 {
+    color: var(--headline-secondary, #FFFFFE);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 150px;
+    margin-top: 100px;
+}
+
+.FAQ .accordion-item button {
+    background-color: var(--Background-Stroke);
+    margin-bottom: 50px;
+}
+.FAQ .accordion-button span {
+    color: var(--Highlight-Secondary)
+}
+
+.FAQ .accordion-collapse div{
+    background-color: rgba(255, 255, 255, 0.5);
+}
