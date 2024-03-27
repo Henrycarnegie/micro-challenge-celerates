@@ -24,26 +24,46 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <header class="header fixed-top py-2 ">
-        <nav class="navbar d-flex justify-content-around">
-            <div class="left-container d-flex justify-content-center align-items-center">
+    <header class="header fixed-top py-2">
+        <nav class="navbar d-flex justify-content-between">
+            <div class="col-6 left-container d-flex justify-content-center align-items-center">
                 <img class="me-3" src="assets/images/icon/icon-web.png" alt="logo-web">
-                <div class="searchbar">
-                    <form action="#">
-                        <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
-                        <input type="email" class="form-control" id="input-product"
-                            placeholder="Cari produk anda disini ...">
+                <div class="searchbar col-6">
+                    <form action="#" class="col-lg-10">
+                        <div class="d-flex align-items-center px-2">
+                            <i class="fa fa-search"></i></button>
+                            <input 
+                                id="openSearchbar"
+                                class="form-control" 
+                                type="email" 
+                                placeholder="Cari produk anda disini ..."
+                            >
+                        </div>
                     </form>
+                    <div id="modalOpen" class="overlay hide col-lg-4">
+                        <div class="recommendation">
+                            <img src="assets/images/content/recom_item1.png" alt="" class="img-fluid me-2">
+                            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quis repudiandae voluptate provident nisi cumque.</span>
+                        </div>
+                        <div class="recommendation">
+                            <img src="assets/images/content/recom_item1.png" alt="" class="img-fluid me-2">
+                            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quis repudiandae voluptate provident nisi cumque.</span>
+                        </div>
+                        <div class="recommendation">
+                            <img src="assets/images/content/recom_item1.png" alt="" class="img-fluid me-2">
+                            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quis repudiandae voluptate provident nisi cumque.</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="right-container d-flex justify-content-center align-items-center">
+            <div class="col-6 right-container d-flex justify-content-center align-items-center">
                 <ul class="list-group pe-3">
                     <li class="list-group-item"><a href="index.html">Beranda</a></li>
                     <li class="list-group-item"><a href="about_us.html">Tentang Kami</a></li>
                     <li class="list-group-item"><a href="profil.html">Profil</a></li>
                     <li class="list-group-item"><a href="#">Test Kulit Anda</a></li>
                 </ul>
-                <button type="button" class="btn btn-primary"><i class="fa-light fa-user"></i>Masuk</button>
+                <button type="button" class="btn btn-primary"><i class="me-2 fa-regular fa-user"></i>Masuk</button>
             </div>
         </nav>
     </header>

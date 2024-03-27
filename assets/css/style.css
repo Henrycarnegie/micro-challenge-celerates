@@ -47,21 +47,53 @@ header.header{
 }
 
 .header .left-container .searchbar {
-    background-color: var(--Highlight-Secondary);
+    background-color: var(--Paragraph-Main);
     border-radius: 20px;
 }
 
 .header .left-container .searchbar form {
-    background-color: inherit;
+    background-color: var(--Highlight-Secondary);
     border-radius: inherit;
 }
 
 .header .left-container .searchbar input {
     background-color: inherit;
+    border: none;
     border-radius: inherit;
 }
 
+.header .left-container .searchbar form input:focus {
+    box-shadow: none;
+}
+
 .header .left-container .searchbar input::placeholder{
+    font-size: 12px;
+}
+
+.header .left-container .searchbar .overlay {
+    max-width: 480px;
+    background: linear-gradient(228deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.05) 100%);
+    box-shadow: 0px 4px 30px -1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(22.5px);
+    padding: 20px;
+    color: var(--Highlight-Secondary);
+    position: absolute;
+    border-radius: 20px;
+}
+
+.hide {
+    display: none;   
+}
+
+.header .left-container .searchbar 
+.overlay .recommendation {
+    display: flex;
+    padding: 16px 0px;
+    align-items: center;
+}
+
+.header .left-container .searchbar 
+.overlay .recommendation span {
     font-size: 12px;
 }
 
@@ -84,6 +116,12 @@ header.header{
     border-color: var(--Background-Stroke);
     color: var(--Background-Stroke);
     font-size: 14px;
+}
+
+.header .right-container .btn:hover {
+    background-color: var(--Background-Stroke);
+    border: var(--Background-Stroke);
+    color: var(--Highlight-Secondary);
 }
 
 
@@ -110,6 +148,18 @@ section.main-content {
     font-size: 20px;
     font-weight: 400;
     text-align: justify;
+}
+
+.main-content .text-content .btn-test {
+    margin: 20px 0px;
+}
+
+.main-content .text-content .btn-test .btn{
+    padding: 12px 24px;
+    border-radius: 25px;
+    border-color:unset;
+    background: radial-gradient(90.78% 123.38% at 6.01% 8.93%, rgba(255, 255, 255, 0.70) 0%, rgba(255, 255, 255, 0.35) 0.01%, rgba(255, 255, 255, 0.28) 100%);
+    backdrop-filter: blur(15px);
 }
 
 .main-content .background-anim {
