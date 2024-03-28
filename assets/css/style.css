@@ -326,7 +326,7 @@ section.my-fav {
 /* FAQ */
 
 section.FAQ {
-    background-image: url(../images/background/bg-faq.png);
+    background-image: url(../images/background/bg-faqlah.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
@@ -336,23 +336,24 @@ section.FAQ {
 }
 
 .FAQ .title h1 {
-    color: var(--headline-secondary, #FFFFFE);
+    color: var(--Highlight-Secondary);
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 150px;
+    margin-bottom: 120px;
     margin-top: 100px;
 }
 
-.FAQ .accordion-item button {
+.FAQ .accordion-flush .accordion-header button {
+    border-radius: 5px;
     background-color: var(--Background-Stroke);
-    margin-bottom: 50px;
+    color: var(--Highlight-Secondary);
 }
-.FAQ .accordion-button span {
+.FAQ .accordion-flush .accordion-button span {
     color: var(--Highlight-Secondary)
 }
 
-.FAQ .accordion-collapse div{
+.FAQ .accordion-body {
     background-color: rgba(255, 255, 255, 0.5);
 }
