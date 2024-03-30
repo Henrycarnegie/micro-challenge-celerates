@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- Font Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,25 +27,45 @@
 <body>
     <!-- Navigation Bar -->
     <header class="header fixed-top py-2">
-        <nav class="navbar d-flex justify-content-around">
-            <div class="left-container d-flex justify-content-center align-items-center">
+        <nav class="navbar d-flex justify-content-between">
+            <div class="col-6 left-container d-flex justify-content-center align-items-center">
                 <img class="me-3" src="assets/images/icon/icon-web.png" alt="logo-web">
-                <div class="searchbar">
-                    <form action="#">
-                        <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
-                        <input type="email" class="form-control" id="input-product"
-                            placeholder="Cari produk anda disini ...">
+                <div class="searchbar col-6">
+                    <form action="#" class="col-lg-10">
+                        <div class="d-flex align-items-center px-2">
+                            <i class="fa fa-search"></i></button>
+                            <input 
+                                id="openSearchbar"
+                                class="form-control" 
+                                type="email" 
+                                placeholder="Cari produk anda disini ..."
+                            >
+                        </div>
                     </form>
+                    <div id="modalOpen" class="overlay hide col-lg-4">
+                        <div class="recommendation">
+                            <img src="assets/images/content/recom_item1.png" alt="" class="img-fluid me-2">
+                            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quis repudiandae voluptate provident nisi cumque.</span>
+                        </div>
+                        <div class="recommendation">
+                            <img src="assets/images/content/recom_item1.png" alt="" class="img-fluid me-2">
+                            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quis repudiandae voluptate provident nisi cumque.</span>
+                        </div>
+                        <div class="recommendation">
+                            <img src="assets/images/content/recom_item1.png" alt="" class="img-fluid me-2">
+                            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quis repudiandae voluptate provident nisi cumque.</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="right-container d-flex justify-content-center align-items-center">
+            <div class="col-6 right-container d-flex justify-content-center align-items-center">
                 <ul class="list-group pe-3">
                     <li class="list-group-item"><a href="index.html">Beranda</a></li>
                     <li class="list-group-item"><a href="about_us.html">Tentang Kami</a></li>
                     <li class="list-group-item"><a href="profil.html">Profil</a></li>
                     <li class="list-group-item"><a href="#">Test Kulit Anda</a></li>
                 </ul>
-                <button type="button" class="btn btn-primary"><i class="fa-light fa-user"></i>Masuk</button>
+                <button type="button" class="btn btn-primary"><i class="me-2 fa-regular fa-user"></i>Masuk</button>
             </div>
         </nav>
     </header>
@@ -58,11 +78,11 @@
                 <div class="col-lg-12 d-flex align-items-center justify-content-between">
                     <div class="text-content col-lg-6">
                         <h1>Lihatlah. Ketahuilah. Perbaikilah.</h1>
-                        <span>Produk skincare yang bagus sebaiknya mampu menjaga kesehatan dan penampilan kulitmu.
-                            Seharusnya mengandung bahan-bahan yang efektif dan aman untuk digunakan. Temukan semua
-                            rekomendasi produk di sini!</span>
+                        <span>Produk skincare yang bagus sebaiknya mampu menjaga kesehatan dan penampilan kulitmu.Seharusnya mengandung bahan-bahan yang efektif dan aman untuk digunakan. Temukan semua rekomendasi produk di sini!</span>
+                        <div class="btn-test">
+                            <button type="button" class="btn btn-primary">Test Tipe Kulit</button>
+                        </div>
                     </div>
-                    
                     <div class="background-anim col-lg-4">
                         <img class="img-fluid" src="assets/images/content/3d_animation_header.png" alt="img-header">
                     </div>
@@ -91,7 +111,7 @@
                             <button type="button" class="btn btn-primary">Preview</button>
                         </div>
                         <div class="card-small d-flex flex-column">
-                            <img src="assets/images/content/new_product_1.png" alt="new product">
+                            <img src="assets/images/content/new_product_3.png" alt="new product">
                             <button type="button" class="btn btn-primary">Preview</button>
                         </div>
                     </div>
@@ -218,6 +238,55 @@
             </div>
           </div>
     </section>
+  
+    <!-- Footer -->  
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <div class="col-4 detail px-4 align-items-center">
+                        <div class="name-web mb-4">
+                            <img src="assets/images/icon/icon-web.png" alt="" class="me-4">
+                            <span>Beautyy</span>
+                        </div>
+                        <div class="desc">
+                            <span>Kecantikan tidak hanya datang dari dalam tetapi juga datang dari luar. Jadi, Anda juga perlu menjaga kesehatan kulit Anda</span>
+                        </div>
+                    </div>
+                    <div class="col-2 navigasi">
+                        <h2 class="mx-4">Navigasi</h2>
+                        <ul class="px-4">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="profil.html">Profil</a></li>
+                            <li><a href="about_us.html">About Us</a></li>
+                            <li><a href="#">Test Skin Type</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3 temukan">
+                        <h2 class="mx-4">Temukan Lainnya</h2>
+                        <ul class="px-4">
+                            <li><a href="#">Brand</a></li>
+                            <li><a href="#">Product</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-2 tentang">
+                        <h2 class="mx-4">About Us</h2>
+                        <ul class="px-4">
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <span>Copyright © 2024 All Right Reserved</span>
+    </div>
+    <!-- Footer -->  
+
+    <script src="assets/js/script.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
