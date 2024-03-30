@@ -345,6 +345,14 @@ section.FAQ {
     margin-top: 100px;
 }
 
+.FAQ .accordion-flush .accordion-item {
+    border-bottom: 0;
+}
+
+.FAQ .accordion-flush .accordion-header {
+    margin-bottom: -5px;
+}
+
 .FAQ .accordion-flush .accordion-header button {
     position: static;
     background-color: var(--Background-Stroke);
@@ -354,6 +362,10 @@ section.FAQ {
 .FAQ .accordion-flush .accordion-button span {
     color: var(--Highlight-Secondary);
     
+}
+
+.FAQ .accordion-button:focus {
+    box-shadow: none;
 }
 
 .FAQ .accordion-body {
@@ -370,7 +382,7 @@ section.FAQ {
     text-align: left;
 }
 
-.FAQ .accordion-button ::after{
+.FAQ .accordion-button::after{
     background-image: url(../images/icon/arrow-down.png);
     transition: all 0.5s;
 }
