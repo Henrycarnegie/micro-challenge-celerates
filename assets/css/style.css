@@ -363,7 +363,6 @@ section.my-fav {
 /* about_us */
 section .visi_misi {
     margin-top : -100px;
-    padding: -100px;
 }
 
 .visi_misi .title-visimisi {
@@ -380,29 +379,7 @@ section .visi_misi {
     border-radius: 25px;
 }
 .visi_misi .title-misi {
-    align-content :flex-end
-    flex-shrink: 10px; 
+    align-content :flex-end;
+    flex-shrink: 10; 
     border-radius: 25px;
 }
-.visi_misi .title-visimisi {
-
-
-    
-}
-
-.visi_misi . {
-}
-
-.visi_misi .title-misi{
-    
-    
-
-}
-
-.visi_misi .title-misi h5 {
-
-.visi_misi .title-visi h1 h5 .title-misi h1 h5 .pose_male {
-
-    
-}
-
