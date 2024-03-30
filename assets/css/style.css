@@ -448,6 +448,62 @@ section.my-fav {
     transform: translateX(-50%);
 } 
 
+/* FAQ */
+
+section.FAQ {
+    background-image: url(../images/background/bg-faqlah.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    padding-top: 75px;
+    padding-bottom: 450px;
+    margin-top: 150px;
+}
+
+.FAQ .title h1 {
+    color: var(--Highlight-Secondary);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 120px;
+    margin-top: 100px;
+}
+
+.FAQ .accordion-flush .accordion-header button {
+    position: static;
+    background-color: var(--Background-Stroke);
+
+}
+
+.FAQ .accordion-flush .accordion-button span {
+    color: var(--Highlight-Secondary);
+    
+}
+
+.FAQ .accordion-body {
+    background-color: var(--Background-Stroke);
+    position: static;
+}
+
+.FAQ .accordion-body span{
+    color: var(--Highlight-Secondary);
+    
+}
+
+.FAQ .accordion-body {
+    text-align: left;
+}
+
+.FAQ .accordion-button ::after{
+    background-image: url(../images/icon/arrow-down.png);
+    transition: all 0.5s;
+}
+
+.FAQ .accordion-button:not(.collapsed) ::after{
+    background-image: url(../images/icon/arrow-up.png);
+}
+
 /* about_us */
 section .visi_misi {
     margin-top : -100px;
