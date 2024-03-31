@@ -27,10 +27,21 @@
     font-family: 'Poppins',sans-serif;
 }
 
+header,
+nav,
+section,
+article,
+aside,
+footer,
+hgroup {
+  display: block;
+}
+
 html,
 body {
     background-color: var(--Highlight-Secondary);
     width: 100%;
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -39,6 +50,7 @@ header.header{
     height: 80px;
     background-color: var(--Paragraph-Main);
     margin-bottom: 150px;
+    padding: 8px 0px;
 }
 
 .header .navbar {
@@ -139,6 +151,49 @@ header.header{
     color: var(--Highlight-Secondary);
 }
 
+@media (max-width: 576px) {
+    .header{
+        display: block !important;
+        text-align: start;
+        height: auto !important;
+        padding: 0px;
+    }
+
+    .header .navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .header .navbar .left-container {
+        margin-bottom: 8px;
+    }
+
+    .header .navbar .left-container img {
+        display: none;
+    }
+
+    .header .navbar .left-container .searchbar {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header .navbar .right-container {
+        justify-content: space-between !important;
+    }
+
+    .header ul li {
+        padding: 4px;
+        font-size: 12px;
+    }
+
+    .header .right-container .btn {
+        font-size: 10px;
+        margin: 0px 4px;
+    }
+
+}
+
 
 /* Main Content*/
 
@@ -169,7 +224,7 @@ section.main-content {
     margin: 20px 0px;
 }
 
-.main-content .text-content .btn-test .btn{
+.main-content .text-content .btn-test .btn {
     padding: 12px 24px;
     border-radius: 25px;
     border-color:unset;
@@ -231,6 +286,40 @@ section.main-content {
     backdrop-filter: blur(22.5px);
     
 }
+
+@media (max-width: 576px) {
+    .main-content .text-content h1 {
+        font-size: 24px;
+    }
+
+    .main-content .text-content span {
+        font-size: 12px;
+        font-weight: 100;
+    }
+
+    .main-content .text-content .btn-test .btn {
+        padding: 10px 16px;
+        font-size: 10px;
+    }
+
+    .main-content .background-anim {
+        width: 150px;
+        height: 150px;
+        flex-shrink: 0;
+        border-radius: 240px;
+        background: linear-gradient(228deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.05) 100%);
+        box-shadow: 0px 4px 30px -1px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(22.5px);
+        margin-right: 0px;
+    }
+
+    .main-content .background-anim img {
+        width: 352px;
+        height: 200px;
+        flex-shrink: 0;
+    }
+}
+
 /* New Product */
 
 section.new-product {
@@ -258,27 +347,14 @@ section.new-product {
     margin-bottom: 48px;
 }
 
-.new-product .container-product .card-big{
+.new-product .container-product .card-big {
     background-color: var(--Background-Stroke);
     padding: 40px;
     border-radius: 20px;
     margin: 0 50px 0 50px;
 }
 
-.new-product .container-product .card-big img {
-    margin-bottom: 35px;
-}
-
-.new-product .container-product .card-big button {
-    background-color: var(--Button-tertiary);
-    color: var(--Background-Stroke);
-    border-radius: 25px;
-    font-size: 24px;
-    font-weight: 600;
-    text-align: center;
-}
-
-.new-product .container-product .card-small{
+.new-product .container-product .card-small {
     background-color: var(--Background-Stroke);
     padding: 34px;
     border-radius: 20px;
@@ -286,10 +362,12 @@ section.new-product {
     height: fit-content;
 }
 
+.new-product .container-product .card-big img,
 .new-product .container-product .card-small img {
     margin-bottom: 35px;
 }
 
+.new-product .container-product .card-big button,
 .new-product .container-product .card-small button {
     background-color: var(--Button-tertiary);
     color: var(--Background-Stroke);
@@ -314,7 +392,46 @@ section.new-product {
     background-color: var(--Background-Stroke);
 }
 
+@media (max-width: 576px) {
+    .new-product .container-product {
+        margin-bottom: 24px;
+    }
+
+    .new-product .container-product .card-big {
+        padding: 16px;
+        margin: 0 12px;
+    }
+
+    .new-product .container-product .card-small {
+        padding: 16px;   
+        margin: 0 12px;
+    }
+
+    .new-product .container-product .card-big img {
+        height: 170px;
+        width: 150px;
+        margin-bottom: 18px;
+    }
+    .new-product .container-product .card-small img {
+        height: 120px;
+        width: 100px;
+        margin-bottom: 18px;
+    }
+
+    .new-product .container-product .card-big button {
+        font-size: 12px;
+        font-weight: 600;
+        padding: 0;
+    }
+    .new-product .container-product .card-small button {
+        font-size: 10px;
+        font-weight: 600;
+        padding: 0;
+    }
+}
+
 /* Top Brand */
+
 section.top-brand {
     margin-bottom: 150px;
 }
@@ -333,6 +450,16 @@ section.top-brand {
     color: var(--Background-Stroke);
     font-size: 30px;
     font-weight: 400;
+}
+
+@media (max-width: 576px) {
+    .top-brand .title h1 {
+        font-size: 40px;
+    }
+
+    .top-brand .title span {
+        font-size: 22px;
+    }
 }
 
 /* Profil */
@@ -455,9 +582,11 @@ section.FAQ {
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
-    padding-top: 75px;
-    padding-bottom: 450px;
-    margin-top: 150px;
+    padding: 200px;
+}
+
+.FAQ .title {
+    margin: 0px 310px;
 }
 
 .FAQ .title h1 {
@@ -504,7 +633,24 @@ section.FAQ {
     background-image: url(../images/icon/arrow-up.png);
 }
 
+@media (max-width: 576px) {
+    section.FAQ {
+        padding: 0;
+        padding-bottom: 100px;
+    }
+
+    .FAQ .title h1 {
+        font-size: 40px;
+        color: var(--Background-Stroke);
+    }
+
+    .FAQ .title {
+        margin: 0px;
+    }
+}
+
 /* about_us */
+
 section .visi_misi {
     margin-top : -100px;
 }
@@ -544,9 +690,7 @@ footer .tentang {
     color: var(--Highlight-Secondary);
 }
 
-footer .navigasi h2,
-footer .temukan h2,
-footer .tentang h2 {
+footer h2 {
     text-align: center;
     font-size: 28px;
     font-weight: 700;
@@ -555,15 +699,15 @@ footer .tentang h2 {
     margin-bottom: 16px;
 }
 
-footer .navigasi ul li,
-footer .temukan ul li,
-footer .tentang ul li {
+footer ul {
+    padding: 0px 24px;
+}
+
+footer ul li {
     list-style: none;
 }
 
-footer .navigasi ul li a,
-footer .temukan ul li a,
-footer .tentang ul li a {
+footer ul li a {
     text-decoration: none;
     color: var(--Highlight-Secondary);
 }
@@ -577,9 +721,54 @@ footer .tentang ul li {
     padding: 0 18px;
 }
 
+@media (max-width: 576px) {
+    footer .tentang ul li {
+        padding: 0 10px;
+    }
+}
+
 .copyright {
     background-color: var(--Paragraph-Main);
     color: var(--Background-Stroke);
     text-align: center;
     padding: 16px 0px;
+}
+
+@media (max-width: 576px) {
+    .copyright {
+        padding: 10px 0;
+    }
+
+    .copyright span {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    footer {
+        padding: 10px;
+    }
+
+    footer .detail {
+        display: none;
+    }
+
+    footer .content {
+        justify-content: space-between !important;
+    }
+
+    footer .content h2 {
+        font-size: 16px;
+        margin: 0px !important;
+        
+    }
+
+    footer ul {
+        padding: 0px !important;
+    }
+
+    footer ul li a {
+        font-size: 12px;
+    }
+
 }
