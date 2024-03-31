@@ -47,21 +47,53 @@ header.header{
 }
 
 .header .left-container .searchbar {
-    background-color: var(--Highlight-Secondary);
+    background-color: var(--Paragraph-Main);
     border-radius: 20px;
 }
 
 .header .left-container .searchbar form {
-    background-color: inherit;
+    background-color: var(--Highlight-Secondary);
     border-radius: inherit;
 }
 
 .header .left-container .searchbar input {
     background-color: inherit;
+    border: none;
     border-radius: inherit;
 }
 
+.header .left-container .searchbar form input:focus {
+    box-shadow: none;
+}
+
 .header .left-container .searchbar input::placeholder{
+    font-size: 12px;
+}
+
+.header .left-container .searchbar .overlay {
+    max-width: 480px;
+    background: linear-gradient(228deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.05) 100%);
+    box-shadow: 0px 4px 30px -1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(22.5px);
+    padding: 20px;
+    color: var(--Highlight-Secondary);
+    position: absolute;
+    border-radius: 20px;
+}
+
+.hide {
+    display: none;   
+}
+
+.header .left-container .searchbar 
+.overlay .recommendation {
+    display: flex;
+    padding: 16px 0px;
+    align-items: center;
+}
+
+.header .left-container .searchbar 
+.overlay .recommendation span {
     font-size: 12px;
 }
 
@@ -79,11 +111,32 @@ header.header{
     color: var(--Background-Stroke);
 }
 
+.header ul li a::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: all 0.3s;
+}
+
+.header ul li a:hover::after {
+    width: 100%;
+    background-color: var(--Background-Stroke);
+}
+
 .header .right-container .btn {
     background-color: inherit;
     border-color: var(--Background-Stroke);
     color: var(--Background-Stroke);
     font-size: 14px;
+}
+
+.header .right-container .btn:hover {
+    background-color: var(--Background-Stroke);
+    border: var(--Background-Stroke);
+    color: var(--Highlight-Secondary);
 }
 
 
@@ -112,6 +165,18 @@ section.main-content {
     text-align: justify;
 }
 
+.main-content .text-content .btn-test {
+    margin: 20px 0px;
+}
+
+.main-content .text-content .btn-test .btn{
+    padding: 12px 24px;
+    border-radius: 25px;
+    border-color:unset;
+    background: radial-gradient(90.78% 123.38% at 6.01% 8.93%, rgba(255, 255, 255, 0.70) 0%, rgba(255, 255, 255, 0.35) 0.01%, rgba(255, 255, 255, 0.28) 100%);
+    backdrop-filter: blur(15px);
+}
+
 .main-content .background-anim {
     width: 480px;
     height: 480px;
@@ -129,6 +194,43 @@ section.main-content {
     flex-shrink: 0;
 }
 
+.main-content .icon-besar img {
+    padding: 0px;
+    width: 795px;
+    height: 800px;
+    border-radius: 50%;
+}
+
+.main-content .title-beauty h1 {
+    margin-top: -10px;
+    margin-right: 0%;
+    padding: 10px 60px 100px 50px;
+    color: var(--Highlight-Secondary);
+    font-size: 75px;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.main-content .title-beauty h5 {
+    text-align: left;
+    padding: 0px 60px 100px 50px;
+    color: var(--Highlight-Secondary);
+    text-align: justify;
+    font-size: 25px;
+    font-weight: 100;
+    
+}
+
+.main-content .title-beauty {
+    width: 60%;
+    height: 110%;
+    flex-shrink: 10; 
+    border-radius: 25px;
+    background: linear-gradient(228deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.05) 100%);
+    box-shadow: 0px 4px 30px -1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(22.5px);
+    
+}
 /* New Product */
 
 section.new-product {
@@ -204,7 +306,7 @@ section.new-product {
 .new-product .nav-product ul li a,
 .new-product .nav-product ul li span{
     border-radius: 100% !important;
-    padding: 12px !important;
+    padding: 7px !important;
     background-color: var(--Question-SkinTest-NotFocused);
 }
 
@@ -264,6 +366,11 @@ section.profil {
     color: var(--Highlight-Secondary);
 }
 
+.profil .detail .container-btn .btn-primary {
+    background-color: var(--Background-Stroke);
+    border-color: var(--Background-Stroke);
+}
+
 .profil .image {
     background-color: var(--Highlight-Secondary);
     border-top-right-radius: 20px;
@@ -273,12 +380,11 @@ section.profil {
 /* My-Favorite */
 
 section.my-fav {
-    margin-top: -100px;
+    margin-top: -150px;
 }
 
 .my-fav .container-fav {
     border-radius: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.20);
     background: linear-gradient(183deg, rgba(0, 0, 0, 0.10) 2.72%, rgba(255, 255, 255, 0.25) 100%);
     box-shadow: 0px 0px 30px -1px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(30px);
@@ -300,6 +406,25 @@ section.my-fav {
 .my-fav .container-items .item {
     position: relative;
     display: inline-block;
+    background-color: var(--Highlight-Secondary);
+    border-radius: 10%;
+}
+
+.my-fav .container-items .nama-item {
+    position: absolute;
+    left: 5%;
+    top: 10px;
+    color: var(--Background-Stroke);
+}
+
+.my-fav .container-items .nama-item h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.my-fav .container-items .nama-item h6 {
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .my-fav .container-items button {
@@ -389,4 +514,84 @@ section.FAQ {
 
 .FAQ .accordion-button:not(.collapsed) ::after{
     background-image: url(../images/icon/arrow-up.png);
+}
+
+/* about_us */
+section .visi_misi {
+    margin-top : -100px;
+}
+
+.visi_misi .title-visimisi {
+    align-items: center;
+    padding-top: 10px;
+    background-color: var(--Paragraph-Main);
+    border-radius: 20px;
+
+}
+
+.visi_misi .title-visi {
+    align-content: start;
+    flex-shrink: 10; 
+    border-radius: 25px;
+}
+.visi_misi .title-misi {
+    align-content :flex-end;
+    flex-shrink: 10; 
+    border-radius: 25px;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--Background-Stroke);
+    padding: 40px;
+}
+
+footer .detail,
+footer .navigasi,
+footer .temukan,
+footer .tentang {
+    display: flex;
+    flex-direction: column;
+    color: var(--Highlight-Secondary);
+}
+
+footer .navigasi h2,
+footer .temukan h2,
+footer .tentang h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    border-bottom: 1px solid var(--Question-SkinTest-NotFocused);
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+footer .navigasi ul li,
+footer .temukan ul li,
+footer .tentang ul li {
+    list-style: none;
+}
+
+footer .navigasi ul li a,
+footer .temukan ul li a,
+footer .tentang ul li a {
+    text-decoration: none;
+    color: var(--Highlight-Secondary);
+}
+
+footer .tentang ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer .tentang ul li {
+    padding: 0 18px;
+}
+
+.copyright {
+    background-color: var(--Paragraph-Main);
+    color: var(--Background-Stroke);
+    text-align: center;
+    padding: 16px 0px;
 }
