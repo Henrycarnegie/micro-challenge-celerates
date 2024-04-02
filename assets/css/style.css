@@ -232,24 +232,41 @@ section.main-content {
     
 }
 
+.main-content .card_hadalabo  {
+    position: relative;
+    top: 0%;
+    left: 2%;
+}
+
 .main-content .card_hadalabo span  {
     padding: 400px 100px;
-    position: absolute;
-    top: -34%;
-    left: 29%;
+    position: relative;
+    top: -38%;
+    left: -22%;
 }
 
 .main-content .card-body {
-    position: absolute;
-    left: 6%;
-    top: 589px;
+    position: relative;
+    left: 5%;
+    top: -100px;
 }
 
 .main-content .title_hadalabo {
-    position: absolute;
-    right: 32px;
-    top: 120px;
+    position: relative;
+    right: 755px;
+    top: 59px;
+    max-width: 560px;
+    height: 390px;
+    text-align: center;
+    flex-shrink: 0;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    opacity: 0.85;
+    background: linear-gradient(313deg, rgb(255, 255, 255) 0%, rgba(234, 221, 221, 0.04) 100%);
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(30px);
     padding: 20px;
+    
 }
 
 
@@ -262,16 +279,17 @@ section.main-content {
 }
 
 .main-content .box-shadow  {
-    position: absolute;
-    top : 120px;
-    right: 32px;
+    position: relative;
+    top : 59px;
+    right: 200px;
     width: 560px;
     height: 390px;
     transform: rotate(-6.165deg);
     flex-shrink: 0;
     border-radius: 25px;
-    opacity: 10;
-    background: linear-gradient(313deg, rgba(255, 255, 255, 0.683) 0%, rgba(255, 255, 255, 0.993) 100%);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    opacity: 0.85;
+    background: linear-gradient(313deg, rgb(255, 255, 255) 0%, rgba(234, 221, 221, 0.04) 100%);      
     box-shadow: 0px 0px 97.675px 0px #D4D4D4, 0px 0px 55.814px 0px #D4D4D4, 0px 0px 32.558px 0px #D4D4D4, 0px 0px 16.279px 0px #D4D4D4, 0px 0px 4.651px 0px #D4D4D4, 0px 0px 2.326px 0px #D4D4D4;
 }
 /* New Product */
