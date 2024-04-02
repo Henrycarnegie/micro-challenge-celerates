@@ -590,11 +590,6 @@ section .visi_misi {
 }
 
 /* Preview product */
-
-section .preview {
-    
-}
-
 .preview .title b {
     margin-top: -200px;
     text-align: center;
