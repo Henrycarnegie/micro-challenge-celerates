@@ -31,6 +31,7 @@
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
+}
 
 header,
 nav,
@@ -168,7 +169,6 @@ header.header{
     color: var(--Highlight-Secondary);
 }
 
-=======
 @media (max-width: 576px) {
     .header{
         display: block !important;
