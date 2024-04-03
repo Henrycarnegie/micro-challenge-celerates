@@ -327,7 +327,7 @@ section.my-fav {
 
 section.sr-landing {
     background-image: url(../images/background/Body-Bg.png);
-    background-repeat: no-repeat;
+    background-repeat: initial;
     background-size: cover;
     background-position: center;
     padding-top: 100px;
@@ -413,6 +413,30 @@ section.sr-landing {
     margin-left: 80px;
     background-image: url(../images/content/HadaLabo_6.png);
     background-size: 102%;
+    border-radius: 20px;
+}
+
+.sr-landing .container-product .card-7 .card {
+    width: 100px;
+    height: 350px;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 70px;
+    background-image: url(../images/content/HadaLabo_7.png);
+    background-size: 103%;
+    border-radius: 20px;
+}
+
+.sr-landing .container-product .card-8 .card {
+    width: 100px;
+    height: 350px;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    background-image: url(../images/content/HadaLabo_8.png);
+    background-size: 103%;
     border-radius: 20px;
 }
 
@@ -519,6 +543,42 @@ section.sr-landing {
 }
 
 .sr-landing .container-product .card .card-body6 button {
+    position: absolute;
+    top: 10px;
+    left: 250px;
+} 
+
+.sr-landing .container-product .card .card-body7 h4 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--button-text-highlight, #232946);
+    text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 270px;
+    left: 20px;
+}
+
+.sr-landing .container-product .card .card-body7 button {
+    position: absolute;
+    top: 10px;
+    left: 250px;
+} 
+
+.sr-landing .container-product .card .card-body8 h4 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--button-text-highlight, #232946);
+    text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 270px;
+    left: 20px;
+}
+
+.sr-landing .container-product .card .card-body8 button {
     position: absolute;
     top: 10px;
     left: 250px;
