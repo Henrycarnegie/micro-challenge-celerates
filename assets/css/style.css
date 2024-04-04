@@ -92,7 +92,7 @@ header.header{
     /* Start Overlay Searchbar */
     
 .hide {
-        display: none;   
+    display: none;   
 }
 
 .header .overlay {
@@ -630,6 +630,12 @@ section.sr-landing {
     border-radius: 20px;
 }
 
+.sr-landing .container-product .card-1 button {
+    position: absolute;
+    top: 26%;
+    left: 34%;
+}
+
 .sr-landing .container-product .card-2 .card {
     width: 100px;
     height: 350px;
@@ -726,11 +732,11 @@ section.sr-landing {
     left: 20px;
 }
 
-.sr-landing .container-product .card .card-body1 button {
+/* .sr-landing .container-product .card .card-body1 button {
     position: absolute;
     top: 10px;
     left: 250px;
-}
+} */
 
 .sr-landing .container-product .card .card-body2 h4 {
     font-size: 18px;
@@ -869,9 +875,6 @@ section.sr-landing {
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.sr-landing .container-product .popUpAddFavorite {
     position: absolute;
     top: 50%;
     left: 50%;
