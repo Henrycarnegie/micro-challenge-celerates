@@ -10,3 +10,16 @@ document.addEventListener('click', e => {
         modalOpen.classList.add('hide')
     }
 })
+
+const openPopUpAddFavorite = document.querySelector('#popUpAddFavorite')
+const modalAddFavorite = document.querySelector('#modalAddFavorite')
+
+openPopUpAddFavorite.addEventListener('click', () => {
+    modalAddFavorite.classList.toggle('hide')
+})
+
+document.addEventListener('click', e => {
+    if(!openPopUpAddFavorite.contains(e.target) && e.target !== openPopUpAddFavorite){
+        modalAddFavorite.classList.add('hide')
+    }
+})
