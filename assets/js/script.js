@@ -11,15 +11,18 @@ document.addEventListener('click', e => {
     }
 })
 
-const openPopUpAddFavorite = document.querySelector('#popUpAddFavorite')
+const openPopUpAddFavorite = document.querySelectorAll('#btnAddFav')
 const modalAddFavorite = document.querySelector('#modalAddFavorite')
 
-openPopUpAddFavorite.addEventListener('click', () => {
-    modalAddFavorite.classList.toggle('hide')
+openPopUpAddFavorite.forEach(openPopUpAddFavorite => {
+    openPopUpAddFavorite.addEventListener('click', () => {
+        modalAddFavorite.classList.toggle('hide')
+    })
 })
 
 document.addEventListener('click', e => {
-    if(!openPopUpAddFavorite.contains(e.target) && e.target !== openPopUpAddFavorite){
-        modalAddFavorite.classList.add('hide')
+    if (!modalAddFavorite.contains(e.target) && !Array.from(openPopUpAddFavorite).some(btn => btn.contains(e.target))) {
+        modalAddFavorite.classList.add('hide');
+        modalAddFavorite.classList.add('active')
     }
 })
