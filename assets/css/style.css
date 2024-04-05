@@ -521,7 +521,36 @@ section.profil {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-  
+
+@media (max-width: 576px) {
+    .profil {
+        padding: 16px;
+    }
+    .profil .image img {
+        height: 200px;
+    }
+    .profil .detail {
+        padding: 10px;
+    }
+    .profil .detail .detail-collapse {
+        display: block !important;
+    }
+    .profil .detail .item span {
+        font-size: 14px;
+    }
+    .profil .detail .container-btn {
+        display: flex;
+        justify-content: space-around;
+    }
+    .profil .detail .container-btn .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        padding: 2px 8px;
+    }
+}
+
 /* Profil */
 
 /* ======================================== */
@@ -725,7 +754,6 @@ section.FAQ {
 .FAQ .accordion-flush .accordion-header button {
     position: static;
     background-color: var(--Background-Stroke);
-
 }
 
 .FAQ .accordion-flush .accordion-button span {
@@ -754,6 +782,10 @@ section.FAQ {
 .FAQ .accordion-button::after{
     background-image: url(../images/icon/arrow-down.png);
     transition: all 0.5s;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border: 0;
 }
 
 .FAQ .accordion-button:not(.collapsed) ::after{
