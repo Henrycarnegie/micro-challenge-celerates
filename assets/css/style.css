@@ -94,7 +94,6 @@ header.header{
 }
 
     /* Start Overlay Searchbar */
-
 .header .overlay {
     max-width: 480px;
     background: linear-gradient(228deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.05) 100%);
@@ -124,7 +123,6 @@ header.header{
 .header a.product-name span {
     font-size: 12px;
 }
-
     /* End Overlay Searchbar */
 
 .header ul {
@@ -156,14 +154,14 @@ header.header{
     background-color: var(--Background-Stroke);
 }
 
-.header .right-container .btn {
+.header .right-container a .btn {
     background-color: inherit;
     border-color: var(--Background-Stroke);
     color: var(--Background-Stroke);
     font-size: 14px;
 }
 
-.header .right-container .btn:hover {
+.header .right-container a .btn:hover {
     background-color: var(--Background-Stroke);
     border: var(--Background-Stroke);
     color: var(--Highlight-Secondary);
