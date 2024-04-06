@@ -667,6 +667,7 @@ section.my-fav {
     position: absolute;
     top: 3%;
     left: 85%;
+    background-color: unset;
 }
 
 .sr-landing .container-product .popUpAddFavorite {
