@@ -305,17 +305,14 @@ header.header{
     color: var(--Highlight-Secondary);
 }
 
-.signup form .btn-google a i {
-    color: var(--Background-Stroke);
-}
-
-.signup form .btn-google a i {
-    color: var();
-}
-
 .signup form button.btn {
     background-color: var(--Button-tertiary);
     border: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.signup form button.btn.btn:hover {
+    transform: scale(1.05);
 }
 
 .signup form button.btn:focus {
