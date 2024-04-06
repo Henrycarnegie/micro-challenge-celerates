@@ -123,6 +123,13 @@ header.header{
 .header a.product-name span {
     font-size: 12px;
 }
+
+@media (max-width: 576px) {
+    .header .overlay {
+        margin-top: 36px;
+        padding: 16px;
+    }
+}
     /* End Overlay Searchbar */
 
 .header ul {
@@ -176,16 +183,17 @@ header.header{
     }
 
     .header .navbar {
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         align-content: center;
     }
 
     .header .navbar .left-container {
-        margin-bottom: 8px;
+        margin-top: 8px;
+
     }
 
-    .header .navbar .left-container img {
+    .header .navbar .left-container img.icon-web {
         display: none;
     }
 
@@ -209,7 +217,33 @@ header.header{
     }
 
 }
- /* Header */
+/* Header */
+
+/* ======================================== */
+
+/* Sign Up */
+
+.signup .row {
+    border: unset;
+}
+
+.signup .container-content {
+    width: 80%;
+    height: 80%;
+    padding: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--Background-Stroke);
+    border: unset;
+}
+
+.signup .container-content .form-signup {
+    background-color: var(--Highlight-Secondary);
+}
+
+/* Sign Up */
 
 /* ======================================== */
 
