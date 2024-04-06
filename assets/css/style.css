@@ -527,6 +527,11 @@ section.profil {
         padding: 16px;
         margin-bottom: 80px;
     }
+    
+    .profil .content {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
 
     .profil .image {
         width: 100%;
@@ -543,9 +548,15 @@ section.profil {
         padding: 16px;
     }
 
-    .profil .content {
-        flex-direction: column-reverse;
-        padding: 0;
+    .profil .content .detail .item input {
+        min-height: 31px;
+        padding: .25rem .5rem;
+        font-size: .875rem;
+        border-radius: .2rem;
+    }
+
+    .profil .content .detail .detail-collapse {
+        display: block !important;
     }
 
     .profil .detail .container-btn {
@@ -635,6 +646,7 @@ section.my-fav {
 @media (max-width: 576px) {
     section.my-fav {
         padding: 0px 16px;
+        margin-top: -100px;
     }
     .my-fav .container-fav {
         padding: 20px;
