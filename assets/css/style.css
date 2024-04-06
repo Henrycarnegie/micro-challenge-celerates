@@ -40,8 +40,7 @@ article,
 aside,
 footer,
 hgroup {
-  display: block;
-
+    display: block;
 }
 
 .hide {
@@ -223,10 +222,6 @@ header.header{
 
 /* Sign Up */
 
-.signup .row {
-    border: unset;
-}
-
 .signup .container-content {
     width: 80%;
     height: 80%;
@@ -236,12 +231,96 @@ header.header{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--Background-Stroke);
-    border: unset;
+    border-radius: 20px;
+    border: 0.8px solid var(--Background-Stroke);
+}
+
+.signup .container-content .img-signup {
+    overflow: visible;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+}
+
+.signup .container-content .img-signup img {
+    max-width: 700px;
+    margin-left: -80px;
 }
 
 .signup .container-content .form-signup {
     background-color: var(--Highlight-Secondary);
+    padding: 100px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
+
+.signup form {
+    margin: 0px 100px;
+}
+
+.signup form h3 {
+    text-decoration: underline;
+    color: var(--Netral-Option-SkinTest);
+}
+
+.signup form input {
+    margin-bottom: 30px;
+    border-radius: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-size: 14px;
+}
+
+.signup form input:focus {
+    box-shadow: none;
+    border-color: var(--Background-Stroke);
+}
+
+.signup form input::placeholder {
+    font-size: 16px;
+    color: var(--Question-SkinTest-NotFocused);
+}
+
+.signup form h6 {
+    margin-bottom: 30px;
+    color: var(--Question-SkinTest-NotFocused);
+}
+
+.signup form .btn-google{
+    margin-bottom: 30px;
+}
+
+.signup form .btn-google a {
+    background-color: var(--Highlight-Secondary);
+    border: 1px solid var(--Background-Stroke);
+    color: var(--Question-SkinTest-NotFocused);
+}
+
+.signup form .btn-google a i {
+    color: var(--Background-Stroke);
+}
+
+.signup form button.btn {
+    background-color: var(--Button-tertiary);
+    border: none;
+}
+
+.signup form button.btn:focus {
+    box-shadow: 5px 10px 5px 5px var(--Text-Non-Focused);
+}
+
+.signup form button.btn:active {
+    box-shadow: var(--Background-Stroke);
+}
+
+.signup form .go-login h6 {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
 
 /* Sign Up */
 
