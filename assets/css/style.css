@@ -518,44 +518,50 @@ section.profil {
 
 .profil .image {
     background-color: var(--Highlight-Secondary);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 @media (max-width: 576px) {
     .profil {
         padding: 16px;
+        margin-bottom: 80px;
     }
+
+    .profil .image {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 0px;
+    }
+
     .profil .image img {
         height: 200px;
     }
+
     .profil .detail {
-        padding: 10px;
+        padding: 16px;
     }
-    .profil .detail .detail-collapse {
-        display: block !important;
+
+    .profil .content {
+        flex-direction: column-reverse;
+        padding: 0;
     }
-    .profil .detail .item span {
-        font-size: 14px;
-    }
+
     .profil .detail .container-btn {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
+
     .profil .detail .container-btn .btn {
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 14px;
-        padding: 2px 8px;
+        margin: 0px;
+        padding: 6px 10px;
     }
 }
-
-/* Profil */
-
-/* ======================================== */
-
-/* My-Favorite */
 
 section.my-fav {
     margin-top: -150px;
@@ -566,13 +572,12 @@ section.my-fav {
     background: linear-gradient(183deg, rgba(0, 0, 0, 0.10) 2.72%, rgba(255, 255, 255, 0.25) 100%);
     box-shadow: 0px 0px 30px -1px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(30px);
-    padding: 90px 60px;
+    padding: 90px 60px 30px;
 }
 
 .my-fav .container-fav .title,
-.my-fav .container-items .colomn-1,
-.my-fav .container-items .colomn-2 {
-    margin-bottom: 95px;
+.my-fav .container-items .colomn-1{
+    margin-top: 0px;
 }
 
 .my-fav .container-fav .title h1 {
@@ -593,6 +598,7 @@ section.my-fav {
     left: 5%;
     top: 10px;
     color: var(--Background-Stroke);
+    text-align: left;
 }
 
 .my-fav .container-items .nama-item h4 {
@@ -619,12 +625,44 @@ section.my-fav {
     transform: translateX(-50%); /* Geser tombol ke kiri sejauh setengah lebar tombol */
 }
 
-.my-fav .container-items span {
+.my-fav .container-items span img {
     position: absolute;
-    bottom: 210px;
+    top: 20%;
     left: 93%;
     transform: translateX(-50%);
 } 
+
+@media (max-width: 576px) {
+    section.my-fav {
+        padding: 0px 16px;
+    }
+    .my-fav .container-fav {
+        padding: 20px;
+        margin-bottom: 50px;
+    }   
+
+    .my-fav .container-fav .title h1 {
+        font-size: 40px;
+    }
+
+    .my-fav .container-items .nama-item h4 {
+        font-size: 14px;
+    }
+
+    .my-fav .container-items .nama-item h6 {
+        font-size: 12px;
+    }
+
+    .my-fav .container-items button {
+        width: fit-content;
+    }
+
+    .my-fav .container-items span img {
+        top: 19%;
+    }
+}
+
+/* Profil */
 
 /* SR_Landing*/
 
