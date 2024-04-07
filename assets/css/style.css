@@ -222,8 +222,9 @@ header.header{
 
 /* Sign Up */
 
-.signup .container-content {
-    width: 60%;
+.signup .container-content,
+.login .container-content {
+    width: 50%;
     height: 60%;
     padding: 0;
     position: fixed;
@@ -235,37 +236,48 @@ header.header{
     border: 0.8px solid var(--Background-Stroke);
 }
 
-.signup .container-content .img-signup {
+.signup .container-content .img-signup,
+.login .container-content .img-login {
     overflow: visible;
     z-index: 0;
     display: flex;
     align-items: center;
 }
 
-.signup .container-content .img-signup img {
+.signup .container-content .img-signup img{
     max-width: 600px;
-    margin-left: 0px;
+    margin-left: -80px;
+}
+
+.login .container-content .img-login img {
+    max-width: 600px;
+    margin-left: -180px;
 }
 
 .signup .container-content .form-signup {
     background-color: var(--Highlight-Secondary);
-    padding: 50px 70px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
 }
 
-.signup form {
-    margin: 0px 100px;
+.login .container-content .form-login {
+    background-color: var(--Highlight-Secondary);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
-.signup form h3 {
+.signup form h3,
+.login form h3 {
     text-decoration: underline;
     color: var(--Netral-Option-SkinTest);
 }
 
-.signup form input {
+.signup form input,
+.login form input {
     margin-bottom: 30px;
     border-radius: 0;
     border-top: 0;
@@ -274,18 +286,39 @@ header.header{
     font-size: 14px;
 }
 
-.signup form input:focus {
+.signup form input:focus,
+.login form input:focus {
     box-shadow: none;
     border-color: var(--Background-Stroke);
 }
 
-.signup form input::placeholder {
+.signup form input::placeholder,
+.login form input::placeholder {
     font-size: 16px;
     color: var(--Question-SkinTest-NotFocused);
 }
 
-.signup form h6 {
+.signup form h6,
+.login form h6 {
     margin-bottom: 30px;
+    color: var(--Question-SkinTest-NotFocused);
+}
+
+.login form .form-collapse {
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.login form .remember-me input {
+    margin: 0;
+}
+
+.login form .forget-pass a {
+    font-size: 13px;
+}
+
+.login form label {
+    font-size: 13px;
     color: var(--Question-SkinTest-NotFocused);
 }
 
@@ -305,21 +338,25 @@ header.header{
     color: var(--Highlight-Secondary);
 }
 
-.signup form button.btn {
+.signup form button.btn,
+.login form button.btn {
     background-color: var(--Button-tertiary);
     border: none;
     transition: all 0.5s ease-in-out;
 }
 
-.signup form button.btn.btn:hover {
+.signup form button.btn.btn:hover,
+.login form button.btn:hover {
     transform: scale(1.05);
 }
 
-.signup form button.btn:focus {
+.signup form button.btn:focus,
+.login form button.btn:focus {
     box-shadow: 5px 10px 5px 5px var(--Text-Non-Focused);
 }
 
-.signup form button.btn:active {
+.signup form button.btn:active,
+.login form button.btn:active {
     box-shadow: var(--Background-Stroke);
 }
 
@@ -332,6 +369,14 @@ header.header{
 /* Sign Up */
 
 /* ======================================== */
+
+/* Login */
+
+.login {
+
+}
+
+/* Login */
 
 /* Main Content (index) */
 
