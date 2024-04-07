@@ -238,10 +238,11 @@ header.header{
 
 .signup .container-content .img-signup,
 .login .container-content .img-login {
-    overflow: visible;
-    z-index: 0;
+    position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
+    pointer-events: none;
 }
 
 .signup .container-content .img-signup img{
@@ -260,6 +261,7 @@ header.header{
     border-bottom-right-radius: 20px;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
+    z-index: 0;
 }
 
 .login .container-content .form-login {
