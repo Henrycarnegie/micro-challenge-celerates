@@ -31,7 +31,7 @@
                     <img src="../assets/images/content/3d_signup.png" alt=>
                 </div>
                 <div class="col-8 form-signup d-flex justify-content-center align-items-center">
-                    <?php
+                    <!-- <?php
                         include("../php/config.php");
                         if (isset($_POST['submit'])) {
                             $name = $_POST['name'];
@@ -54,8 +54,8 @@
                                     </div> <br>";
                             }
                         }
-                    ?>
-                    <form action="" method="post" class="col-8">
+                    ?> -->
+                    <form action="../php/signup-process.php" method="post" class="col-8">
                         <div class="form-title mb-lg-5">
                             <h3 class="text">Buat akun</h3>
                         </div>
@@ -78,7 +78,7 @@
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                         <div class="go-login">
-                            <h6>Sudah punya akun? <a href="login.php">Masuk</a></h6>
+                            <h6>Sudah punya akun? <a href="login.html">Masuk</a></h6>
                         </div>
                     </form>
                 </div>
