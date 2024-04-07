@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,10 +19,10 @@
     <!-- Font Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
     <section class="signup">
         <div class="container">
@@ -30,12 +31,36 @@
                     <img src="../assets/images/content/3d_signup.png" alt=>
                 </div>
                 <div class="col-8 form-signup d-flex justify-content-center align-items-center">
+                    <?php
+                        include("../php/config.php");
+                        if (isset($_POST['submit'])) {
+                            $name = $_POST['name'];
+                            $email = $_POST['email'];
+                            $password = $_POST['password'];
+
+                            //verifying the unique email
+                            $verify_query = mysqli_query($conn, "SELECT email FROM users WHERE email='$email");
+
+                            if (mysqli_num_rows($verify_query) != 0) {
+                                echo "<div class = 'message'>
+                                            <p>This email is used, Try another One Please!</p>
+                                        </div> <br>";
+                                echo "<a href='javascript:self.history.back()'><button class = 'btn'></button>";
+                            } else {
+                                mysqli_query($conn, "INSERT INTO users(name, email, password) VALUES('$name', '$email', '$password') ");
+
+                                echo "<div class = 'message'>
+                                        <p>Registration succesfully</p>
+                                    </div> <br>";
+                            }
+                        }
+                    ?>
                     <form action="" method="post" class="col-8">
                         <div class="form-title mb-lg-5">
                             <h3 class="text">Buat akun</h3>
                         </div>
                         <div class="col-12">
-                            <input name="nama" type="text" class="form-control form-control-lg" placeholder="nama" aria-label="default input example">
+                            <input name="name" type="text" class="form-control form-control-lg" placeholder="nama" aria-label="default input example">
                         </div>
                         <div class="col-12">
                             <input name="email" type="email" class="form-control form-control-lg" id="inputEmail" placeholder="alamat email">
@@ -64,4 +89,5 @@
     <script src="../assets/js/script.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>
