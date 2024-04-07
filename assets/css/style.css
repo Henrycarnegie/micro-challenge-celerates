@@ -40,8 +40,7 @@ article,
 aside,
 footer,
 hgroup {
-  display: block;
-
+    display: block;
 }
 
 .hide {
@@ -94,7 +93,6 @@ header.header{
 }
 
     /* Start Overlay Searchbar */
-
 .header .overlay {
     max-width: 480px;
     background: linear-gradient(228deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.05) 100%);
@@ -125,6 +123,12 @@ header.header{
     font-size: 12px;
 }
 
+@media (max-width: 576px) {
+    .header .overlay {
+        margin-top: 36px;
+        padding: 16px;
+    }
+}
     /* End Overlay Searchbar */
 
 .header ul {
@@ -156,14 +160,14 @@ header.header{
     background-color: var(--Background-Stroke);
 }
 
-.header .right-container .btn {
+.header .right-container a .btn {
     background-color: inherit;
     border-color: var(--Background-Stroke);
     color: var(--Background-Stroke);
     font-size: 14px;
 }
 
-.header .right-container .btn:hover {
+.header .right-container a .btn:hover {
     background-color: var(--Background-Stroke);
     border: var(--Background-Stroke);
     color: var(--Highlight-Secondary);
@@ -178,16 +182,17 @@ header.header{
     }
 
     .header .navbar {
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         align-content: center;
     }
 
     .header .navbar .left-container {
-        margin-bottom: 8px;
+        margin-top: 8px;
+
     }
 
-    .header .navbar .left-container img {
+    .header .navbar .left-container img.icon-web {
         display: none;
     }
 
@@ -211,7 +216,157 @@ header.header{
     }
 
 }
- /* Header */
+/* Header */
+
+/* ======================================== */
+
+/* Sign Up */
+
+.signup .container-content,
+.login .container-content {
+    width: 50%;
+    height: 60%;
+    padding: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--Background-Stroke);
+    border-radius: 20px;
+    border: 0.8px solid var(--Background-Stroke);
+}
+
+.signup .container-content .img-signup,
+.login .container-content .img-login {
+    overflow: visible;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+}
+
+.signup .container-content .img-signup img{
+    max-width: 600px;
+    margin-left: -80px;
+}
+
+.login .container-content .img-login img {
+    max-width: 600px;
+    margin-left: -180px;
+}
+
+.signup .container-content .form-signup {
+    background-color: var(--Highlight-Secondary);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.login .container-content .form-login {
+    background-color: var(--Highlight-Secondary);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.signup form h3,
+.login form h3 {
+    text-decoration: underline;
+    color: var(--Netral-Option-SkinTest);
+}
+
+.signup form input,
+.login form input {
+    margin-bottom: 30px;
+    border-radius: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-size: 14px;
+}
+
+.signup form input:focus,
+.login form input:focus {
+    box-shadow: none;
+    border-color: var(--Background-Stroke);
+}
+
+.signup form input::placeholder,
+.login form input::placeholder {
+    font-size: 16px;
+    color: var(--Question-SkinTest-NotFocused);
+}
+
+.signup form h6,
+.login form h6 {
+    margin-bottom: 30px;
+    color: var(--Question-SkinTest-NotFocused);
+}
+
+.login form .form-collapse {
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.login form .remember-me input {
+    margin: 0;
+}
+
+.login form .forget-pass a {
+    font-size: 13px;
+}
+
+.login form label {
+    font-size: 13px;
+    color: var(--Question-SkinTest-NotFocused);
+}
+
+.signup form .btn-google{
+    margin-bottom: 30px;
+}
+
+.signup form .btn-google a {
+    background-color: var(--Highlight-Secondary);
+    border: 1px solid var(--Background-Stroke);
+    color: var(--Question-SkinTest-NotFocused);
+}
+
+.signup form .btn-google a:hover {
+    background-color: var(--Underlined-Text);
+    border: 1px solid var(--Underlined-Text);
+    color: var(--Highlight-Secondary);
+}
+
+.signup form button.btn,
+.login form button.btn {
+    background-color: var(--Button-tertiary);
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.signup form button.btn.btn:hover,
+.login form button.btn:hover {
+    transform: scale(1.05);
+}
+
+.signup form button.btn:focus,
+.login form button.btn:focus {
+    box-shadow: 5px 10px 5px 5px var(--Text-Non-Focused);
+}
+
+.signup form button.btn:active,
+.login form button.btn:active {
+    box-shadow: var(--Background-Stroke);
+}
+
+.signup form .go-login h6 {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+
+/* Sign Up */
 
 /* ======================================== */
 
@@ -509,44 +664,61 @@ section.profil {
 
 .profil .image {
     background-color: var(--Highlight-Secondary);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 @media (max-width: 576px) {
     .profil {
         padding: 16px;
+        margin-bottom: 80px;
     }
+    
+    .profil .content {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .profil .image {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 0px;
+    }
+
     .profil .image img {
         height: 200px;
     }
+
     .profil .detail {
-        padding: 10px;
+        padding: 16px;
     }
-    .profil .detail .detail-collapse {
+
+    .profil .content .detail .item input {
+        min-height: 31px;
+        padding: .25rem .5rem;
+        font-size: .875rem;
+        border-radius: .2rem;
+    }
+
+    .profil .content .detail .detail-collapse {
         display: block !important;
     }
-    .profil .detail .item span {
-        font-size: 14px;
-    }
+
     .profil .detail .container-btn {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
+
     .profil .detail .container-btn .btn {
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 14px;
-        padding: 2px 8px;
+        margin: 0px;
+        padding: 6px 10px;
     }
 }
-
-/* Profil */
-
-/* ======================================== */
-
-/* My-Favorite */
 
 section.my-fav {
     margin-top: -150px;
@@ -557,13 +729,12 @@ section.my-fav {
     background: linear-gradient(183deg, rgba(0, 0, 0, 0.10) 2.72%, rgba(255, 255, 255, 0.25) 100%);
     box-shadow: 0px 0px 30px -1px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(30px);
-    padding: 90px 60px;
+    padding: 90px 60px 30px;
 }
 
 .my-fav .container-fav .title,
-.my-fav .container-items .colomn-1,
-.my-fav .container-items .colomn-2 {
-    margin-bottom: 95px;
+.my-fav .container-items .colomn-1{
+    margin-top: 0px;
 }
 
 .my-fav .container-fav .title h1 {
@@ -584,6 +755,7 @@ section.my-fav {
     left: 5%;
     top: 10px;
     color: var(--Background-Stroke);
+    text-align: left;
 }
 
 .my-fav .container-items .nama-item h4 {
@@ -610,12 +782,45 @@ section.my-fav {
     transform: translateX(-50%); /* Geser tombol ke kiri sejauh setengah lebar tombol */
 }
 
-.my-fav .container-items span {
+.my-fav .container-items span img {
     position: absolute;
-    bottom: 210px;
+    top: 20%;
     left: 93%;
     transform: translateX(-50%);
 } 
+
+@media (max-width: 576px) {
+    section.my-fav {
+        padding: 0px 16px;
+        margin-top: -100px;
+    }
+    .my-fav .container-fav {
+        padding: 20px;
+        margin-bottom: 50px;
+    }   
+
+    .my-fav .container-fav .title h1 {
+        font-size: 40px;
+    }
+
+    .my-fav .container-items .nama-item h4 {
+        font-size: 14px;
+    }
+
+    .my-fav .container-items .nama-item h6 {
+        font-size: 12px;
+    }
+
+    .my-fav .container-items button {
+        width: fit-content;
+    }
+
+    .my-fav .container-items span img {
+        top: 19%;
+    }
+}
+
+/* Profil */
 
 /* SR_Landing*/
 
