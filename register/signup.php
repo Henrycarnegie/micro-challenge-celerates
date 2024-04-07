@@ -53,7 +53,7 @@
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                         <div class="go-login">
-                            <h6>Sudah punya akun? <a href="login.html">Masuk</a></h6>
+                            <h6>Sudah punya akun? <a href="login.php">Masuk</a></h6>
                         </div>
                     </form>
                 </div>
