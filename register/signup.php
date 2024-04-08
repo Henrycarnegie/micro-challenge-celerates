@@ -31,7 +31,7 @@
                     <img src="../assets/images/content/3d_signup.png" alt=>
                 </div>
                 <div class="col-8 form-signup d-flex justify-content-center align-items-center">
-                    <form action="signup-process.php" method="post" class="col-8">
+                    <form action="signupProcess.php" method="post" class="col-8">
                         <div class="form-title mb-lg-5">
                             <h3 class="text">Buat akun</h3>
                         </div>
@@ -51,7 +51,7 @@
                             <a href="#" class="btn btn-primary"><i class="fa-brands fa-google me-lg-2"></i>lanjut dengan google</a>
                         </div>
                         <div class="d-grid">
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" name="signup" class="btn btn-primary">Submit</button>
                         </div>
                         <div class="go-login">
                             <h6>Sudah punya akun? <a href="login.html">Masuk</a></h6>
