@@ -26,65 +26,9 @@
 
 <body>
     <!-- Navigation Bar -->
-    <header class="header fixed-top">
-        <nav class="col-12 navbar">
-            <div class="col-12 col-lg-6 left-container d-flex justify-content-center align-items-center">
-                <img class="me-3 icon-web" src="../assets/images/icon/icon-web.png" alt="logo-web">
-                <div class="searchbar col-12 col-lg-6">
-                    <form action="#" class="col-10">
-                        <div class="d-flex align-items-center px-2">
-                            <i class="fa fa-search"></i></button>
-                            <input id="openSearchbar" class="form-control" type="email"
-                                placeholder="Cari produk anda disini ...">
-                        </div>
-                    </form>
-                    <div id="modalOpen" class="overlay hide col-4">
-                        <div class="recommendation">
-                            <a href="search_result.html" class="product-img">
-                                <img src="../assets/images/content/recom_item1.png" alt="" class="img-fluid me-2">
-                            </a>
-                            <a href="search_result.html" class="product-name">
-                                <h6>Toner "The Originote"</h6>
-                                <span>mengandung Ceraluronic Essence</span>
-                            </a>
-                        </div>
-                        <div class="recommendation">
-                            <a href="search_result.html" class="product-img">
-                                <img src="../assets/images/content/recom_item1.png" alt="" class="img-fluid me-2">
-                            </a>
-                            <a href="search_result.html" class="product-name">
-                                <h6>Toner "The Originote"</h6>
-                                <span>mengandung Ceraluronic Essence</span>
-                            </a>
-                        </div>
-                        <div class="recommendation">
-                            <a href="search_result.html" class="product-img">
-                                <img src="../assets/images/content/recom_item1.png" alt="" class="img-fluid me-2">
-                            </a>
-                            <a href="search_result.html" class="product-name">
-                                <h6>Toner "The Originote"</h6>
-                                <span>mengandung Ceraluronic Essence</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 right-container d-flex justify-content-center align-items-center">
-                <ul class="list-group pe-2">
-                    <li class="list-group-item"><a href="../index.html">Beranda</a></li>
-                    <li class="list-group-item"><a href="about_us.html">Tentang Kami</a></li>
-                    <li class="list-group-item"><a href="profil.html">Profil</a></li>
-                    <li class="list-group-item"><a href="#">Test Kulit Anda</a></li>
-                </ul>
-                <a href="register/signup.html" class="btn-register">
-                    <button type="button" class="btn btn-primary"><i class="me-2 fa-regular fa-user"></i>Masuk</button>
-                </a>
-            </div>
-        </nav>
-    </header>
+    <?php include "../layout/headerPages.html" ?>
     <!-- Navigation Bar -->
-
-
+    
     <!-- Tampilan awal -->
     <section class="main-content">
         <div class="container">
