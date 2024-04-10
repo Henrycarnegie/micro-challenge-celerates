@@ -470,16 +470,7 @@ section.main-content {
     box-shadow: 0px 0px 97.675px 0px #D4D4D4, 0px 0px 55.814px 0px #D4D4D4, 0px 0px 32.558px 0px #D4D4D4, 0px 0px 16.279px 0px #D4D4D4, 0px 0px 4.651px 0px #D4D4D4, 0px 0px 2.326px 0px #D4D4D4;
 }
 
-.main-content .title-beauty {
-    width: 60%;
-    height: 110%;
-    flex-shrink: 10; 
-    border-radius: 25px;
-    background: linear-gradient(228deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.05) 100%);
-    box-shadow: 0px 4px 30px -1px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(22.5px);
-    
-}
+
 
 @media (max-width: 576px) {
     .main-content .text-content h1 {
@@ -1061,42 +1052,65 @@ section .visi_misi {
     border-radius: 50%;
 }
 
-.main-content .title-beauty h1 {
-    margin-top: -10px;
-    margin-right: 0%;
-    padding: 10px 60px 100px 50px;
-    color: var(--Highlight-Secondary);
-    font-size: 75px;
-    text-align: justify;
-    font-weight: 500;
+.main-content .box-beauty {
+    position: relative;
+    top: -5px;
+    right: -5px;
+    width: 580px;
+    height: 470px;
+    border-radius: 25px;
+    opacity: 0.85;
+    background: rgba(184, 193, 236, 0.50);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
 }
 
-.main-content .title-beauty h5 {
-    text-align: left;
-    padding: 0px 60px 100px 50px;
+.main-content .text-beauty {
+    position: relative;
+    top: 15px;
+    right: 600px;
+    width: 580px;
+    height: 470px;
+    border-radius: 25px;
+    opacity: 0.85;
+    background: linear-gradient(180deg, rgba(230, 222, 255, 0.30) 0%, rgba(110, 79, 253, 0.30) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    
+}
+
+
+.main-content .text-beauty h1 {
+    position: relative;
+    top: 50px;
+    right: -40px;
+    font-size: 50px;
+    font-weight: 600px;
     color: var(--Highlight-Secondary);
+
+}
+
+.main-content .text-beauty h5 {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    flex-shrink: 0;
+    top: 60px;
+    right: -40px;
     text-align: justify;
     font-size: 25px;
-    font-weight: 100;
+    color: var(--Highlight-Secondary);
     
 }
 
-.main-content .title-beauty {
-    width: 60%;
-    height: 110%;
-    flex-shrink: 10; 
-    border-radius: 25px;
-    background: linear-gradient(228deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.05) 100%);
-    box-shadow: 0px 4px 30px -1px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(22.5px);
-    
-}
+
 
 .visi_misi .title-visimisi {
+    margin-top: -210px;
+    width: 1200px;
+    height: 400px;
     align-items: center;
     padding-top: 10px;
-    background-color: var(--Paragraph-Main);
     border-radius: 20px;
+    background: rgba(184, 193, 236, 0.30);
 
 }
 
@@ -1105,10 +1119,22 @@ section .visi_misi {
     flex-shrink: 10; 
     border-radius: 25px;
 }
+
 .visi_misi .title-misi {
     align-content :flex-end;
     flex-shrink: 10; 
     border-radius: 25px;
+}
+
+.visi_misi .pose_male img {
+    position: relative;
+    top: -110px;
+    right: 200px;
+    max-width: 700px;
+    height: 620px;
+    flex-shrink: 0;
+    overflow: visible;
+    
 }
 
 /* about_us */
@@ -1234,6 +1260,74 @@ section .visi_misi {
 /* Preview product */
 
 /* ======================================== */
+
+/* SkinType Landing */
+
+.skintype-landing .text-content {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.skintype-landing .text-content h1 {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+}
+
+.skintype-landing .content-body h2 {
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--Highlight-Secondary);
+}
+
+.skintype-landing .content-body .oren {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #F8A435;
+}
+
+.skintype-landing .card-1 .card {
+    background-color: var(--Button-tertiary);
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    height: 250px;
+    margin-left: 20px;
+}
+
+.skintype-landing .card-1 .card .card-body .card-title {
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position:absolute;
+    top: 120%;
+    left: 15%;
+    color: #000;
+}
+
+.skintype-landing .card-1 .card .card-body .card-text {
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #000;
+    position: absolute;
+    top: 153%;
+    right: 10%;
+}
+
+
+/* SkinType Landing */
 
 /* Footer */
 
