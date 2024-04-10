@@ -160,14 +160,14 @@ header.header{
     background-color: var(--Background-Stroke);
 }
 
-.header .right-container a .btn {
+.header .right-container button.btn {
     background-color: inherit;
     border-color: var(--Background-Stroke);
     color: var(--Background-Stroke);
     font-size: 14px;
 }
 
-.header .right-container a .btn:hover {
+.header .right-container button.btn:hover {
     background-color: var(--Background-Stroke);
     border: var(--Background-Stroke);
     color: var(--Highlight-Secondary);
@@ -238,10 +238,11 @@ header.header{
 
 .signup .container-content .img-signup,
 .login .container-content .img-login {
-    overflow: visible;
-    z-index: 0;
+    position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
+    pointer-events: none;
 }
 
 .signup .container-content .img-signup img{
@@ -260,6 +261,7 @@ header.header{
     border-bottom-right-radius: 20px;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
+    z-index: 0;
 }
 
 .login .container-content .form-login {
@@ -363,6 +365,35 @@ header.header{
 .signup form .go-login h6 {
     margin-top: 30px;
     font-size: 14px;
+}
+
+.login-failed {
+    background-color: var(--Background-Stroke);
+    color: var(--Highlight-Secondary);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 200px;
+    border-radius: 10%;
+    padding: 50px 16px;
+    text-align: center;
+}
+
+.login-failed .icon {
+    background-color: var(--Highlight);
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 20px;
+    border-radius: 10%;
+}
+
+.login-failed .icon i {
+    font-size: 50px;
+    font-weight: 900;
 }
 
 

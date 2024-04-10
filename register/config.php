@@ -4,11 +4,11 @@
     $password = "";
     $database = "micro_challenge_celerates";
 
-    // $conn = mysqli_connect("localhost", "root", "", "micro_challenge_celerates"); 
-    $conn = mysqli_connect($host, $username, $password, $database);
+    $db = mysqli_connect($host, $username, $password, $database);
 
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
+    if ($db->connect_error) {
+        echo "Koneksi Database Gagal!!";
+        die("Database error failed: " . $mysqli->connect_error);
     }
 
 ?>

@@ -1,3 +1,9 @@
+<?php
+    if (isset ($_SESSION["is_login"])) {
+        header("location: ../profil.php");
+        exit();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,31 +37,7 @@
                     <img src="../assets/images/content/3d_signup.png" alt=>
                 </div>
                 <div class="col-8 form-signup d-flex justify-content-center align-items-center">
-                    <?php
-                        include("../php/config.php");
-                        if (isset($_POST['submit'])) {
-                            $name = $_POST['name'];
-                            $email = $_POST['email'];
-                            $password = $_POST['password'];
-
-                            //verifying the unique email
-                            $verify_query = mysqli_query($conn, "SELECT email FROM users WHERE email='$email");
-
-                            if (mysqli_num_rows($verify_query) != 0) {
-                                echo "<div class = 'message'>
-                                            <p>This email is used, Try another One Please!</p>
-                                        </div> <br>";
-                                echo "<a href='javascript:self.history.back()'><button class = 'btn'></button>";
-                            } else {
-                                mysqli_query($conn, "INSERT INTO users(name, email, password) VALUES('$name', '$email', '$password') ");
-
-                                echo "<div class = 'message'>
-                                        <p>Registration succesfully</p>
-                                    </div> <br>";
-                            }
-                        }
-                    ?>
-                    <form action="" method="post" class="col-8">
+                    <form action="signupProcess.php" method="post" class="col-8">
                         <div class="form-title mb-lg-5">
                             <h3 class="text">Buat akun</h3>
                         </div>
@@ -75,7 +57,7 @@
                             <a href="#" class="btn btn-primary"><i class="fa-brands fa-google me-lg-2"></i>lanjut dengan google</a>
                         </div>
                         <div class="d-grid">
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" name="signup" class="btn btn-primary">Submit</button>
                         </div>
                         <div class="go-login">
                             <h6>Sudah punya akun? <a href="login.php">Masuk</a></h6>
