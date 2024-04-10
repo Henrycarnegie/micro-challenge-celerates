@@ -40,8 +40,7 @@ article,
 aside,
 footer,
 hgroup {
-  display: block;
-
+    display: block;
 }
 
 .hide {
@@ -94,7 +93,6 @@ header.header{
 }
 
     /* Start Overlay Searchbar */
-
 .header .overlay {
     max-width: 480px;
     background: linear-gradient(228deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.05) 100%);
@@ -125,6 +123,12 @@ header.header{
     font-size: 12px;
 }
 
+@media (max-width: 576px) {
+    .header .overlay {
+        margin-top: 36px;
+        padding: 16px;
+    }
+}
     /* End Overlay Searchbar */
 
 .header ul {
@@ -156,14 +160,14 @@ header.header{
     background-color: var(--Background-Stroke);
 }
 
-.header .right-container .btn {
+.header .right-container button.btn {
     background-color: inherit;
     border-color: var(--Background-Stroke);
     color: var(--Background-Stroke);
     font-size: 14px;
 }
 
-.header .right-container .btn:hover {
+.header .right-container button.btn:hover {
     background-color: var(--Background-Stroke);
     border: var(--Background-Stroke);
     color: var(--Highlight-Secondary);
@@ -178,16 +182,17 @@ header.header{
     }
 
     .header .navbar {
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         align-content: center;
     }
 
     .header .navbar .left-container {
-        margin-bottom: 8px;
+        margin-top: 8px;
+
     }
 
-    .header .navbar .left-container img {
+    .header .navbar .left-container img.icon-web {
         display: none;
     }
 
@@ -211,7 +216,188 @@ header.header{
     }
 
 }
- /* Header */
+/* Header */
+
+/* ======================================== */
+
+/* Sign Up */
+
+.signup .container-content,
+.login .container-content {
+    width: 50%;
+    height: 60%;
+    padding: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--Background-Stroke);
+    border-radius: 20px;
+    border: 0.8px solid var(--Background-Stroke);
+}
+
+.signup .container-content .img-signup,
+.login .container-content .img-login {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+.signup .container-content .img-signup img{
+    max-width: 600px;
+    margin-left: -80px;
+}
+
+.login .container-content .img-login img {
+    max-width: 600px;
+    margin-left: -180px;
+}
+
+.signup .container-content .form-signup {
+    background-color: var(--Highlight-Secondary);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    z-index: 0;
+}
+
+.login .container-content .form-login {
+    background-color: var(--Highlight-Secondary);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.signup form h3,
+.login form h3 {
+    text-decoration: underline;
+    color: var(--Netral-Option-SkinTest);
+}
+
+.signup form input,
+.login form input {
+    margin-bottom: 30px;
+    border-radius: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-size: 14px;
+}
+
+.signup form input:focus,
+.login form input:focus {
+    box-shadow: none;
+    border-color: var(--Background-Stroke);
+}
+
+.signup form input::placeholder,
+.login form input::placeholder {
+    font-size: 16px;
+    color: var(--Question-SkinTest-NotFocused);
+}
+
+.signup form h6,
+.login form h6 {
+    margin-bottom: 30px;
+    color: var(--Question-SkinTest-NotFocused);
+}
+
+.login form .form-collapse {
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.login form .remember-me input {
+    margin: 0;
+}
+
+.login form .forget-pass a {
+    font-size: 13px;
+}
+
+.login form label {
+    font-size: 13px;
+    color: var(--Question-SkinTest-NotFocused);
+}
+
+.signup form .btn-google{
+    margin-bottom: 30px;
+}
+
+.signup form .btn-google a {
+    background-color: var(--Highlight-Secondary);
+    border: 1px solid var(--Background-Stroke);
+    color: var(--Question-SkinTest-NotFocused);
+}
+
+.signup form .btn-google a:hover {
+    background-color: var(--Underlined-Text);
+    border: 1px solid var(--Underlined-Text);
+    color: var(--Highlight-Secondary);
+}
+
+.signup form button.btn,
+.login form button.btn {
+    background-color: var(--Button-tertiary);
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.signup form button.btn.btn:hover,
+.login form button.btn:hover {
+    transform: scale(1.05);
+}
+
+.signup form button.btn:focus,
+.login form button.btn:focus {
+    box-shadow: 5px 10px 5px 5px var(--Text-Non-Focused);
+}
+
+.signup form button.btn:active,
+.login form button.btn:active {
+    box-shadow: var(--Background-Stroke);
+}
+
+.signup form .go-login h6 {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.login-failed {
+    background-color: var(--Background-Stroke);
+    color: var(--Highlight-Secondary);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 200px;
+    border-radius: 10%;
+    padding: 50px 16px;
+    text-align: center;
+}
+
+.login-failed .icon {
+    background-color: var(--Highlight);
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 20px;
+    border-radius: 10%;
+}
+
+.login-failed .icon i {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+
+/* Sign Up */
 
 /* ======================================== */
 
@@ -518,6 +704,11 @@ section.profil {
         padding: 16px;
         margin-bottom: 80px;
     }
+    
+    .profil .content {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
 
     .profil .image {
         width: 100%;
@@ -534,9 +725,15 @@ section.profil {
         padding: 16px;
     }
 
-    .profil .content {
-        flex-direction: column-reverse;
-        padding: 0;
+    .profil .content .detail .item input {
+        min-height: 31px;
+        padding: .25rem .5rem;
+        font-size: .875rem;
+        border-radius: .2rem;
+    }
+
+    .profil .content .detail .detail-collapse {
+        display: block !important;
     }
 
     .profil .detail .container-btn {
@@ -626,6 +823,7 @@ section.my-fav {
 @media (max-width: 576px) {
     section.my-fav {
         padding: 0px 16px;
+        margin-top: -100px;
     }
     .my-fav .container-fav {
         padding: 20px;
@@ -1062,6 +1260,74 @@ section .visi_misi {
 /* Preview product */
 
 /* ======================================== */
+
+/* SkinType Landing */
+
+.skintype-landing .text-content {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.skintype-landing .text-content h1 {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+}
+
+.skintype-landing .content-body h2 {
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--Highlight-Secondary);
+}
+
+.skintype-landing .content-body .oren {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #F8A435;
+}
+
+.skintype-landing .card-1 .card {
+    background-color: var(--Button-tertiary);
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    height: 250px;
+    margin-left: 20px;
+}
+
+.skintype-landing .card-1 .card .card-body .card-title {
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position:absolute;
+    top: 120%;
+    left: 15%;
+    color: #000;
+}
+
+.skintype-landing .card-1 .card .card-body .card-text {
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #000;
+    position: absolute;
+    top: 153%;
+    right: 10%;
+}
+
+
+/* SkinType Landing */
 
 /* Footer */
 

@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Logo-Website Name -->
-    <link rel="icon" href="../assets/icon/icon-web">
+    <link rel="icon" href="assets/images/icon/icon-web.png">
     <title>Micro-Challenge</title>
 
     <!-- CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- Font Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +29,7 @@
     <header class="header fixed-top">
         <nav class="col-12 navbar">
             <div class="col-12 col-lg-6 left-container d-flex justify-content-center align-items-center">
-                <img class="me-3" src="../assets/images/icon/icon-web.png" alt="logo-web">
+                <img class="me-3 icon-web" src="assets/images/icon/icon-web.png" alt="logo-web">
                 <div class="searchbar col-12 col-lg-6">
                     <form action="#" class="col-10">
                         <div class="d-flex align-items-center px-2">
@@ -41,7 +41,7 @@
                     <div id="modalOpen" class="overlay hide col-4">
                         <div class="recommendation">
                             <a href="search_result.html" class="product-img">
-                                <img src="../assets/images/content/recom_item1.png" alt="" class="img-fluid me-2">
+                                <img src="assets/images/content/recom_item1.png" alt="" class="img-fluid me-2">
                             </a>
                             <a href="search_result.html" class="product-name">
                                 <h6>Toner "The Originote"</h6>
@@ -50,7 +50,7 @@
                         </div>
                         <div class="recommendation">
                             <a href="search_result.html" class="product-img">
-                                <img src="../assets/images/content/recom_item1.png" alt="" class="img-fluid me-2">
+                                <img src="assets/images/content/recom_item1.png" alt="" class="img-fluid me-2">
                             </a>
                             <a href="search_result.html" class="product-name">
                                 <h6>Toner "The Originote"</h6>
@@ -59,7 +59,7 @@
                         </div>
                         <div class="recommendation">
                             <a href="search_result.html" class="product-img">
-                                <img src="../assets/images/content/recom_item1.png" alt="" class="img-fluid me-2">
+                                <img src="assets/images/content/recom_item1.png" alt="" class="img-fluid me-2">
                             </a>
                             <a href="search_result.html" class="product-name">
                                 <h6>Toner "The Originote"</h6>
@@ -71,38 +71,61 @@
             </div>
             <div class="col-lg-6 right-container d-flex justify-content-center align-items-center">
                 <ul class="list-group pe-2">
-                    <li class="list-group-item"><a href="../index.html">Beranda</a></li>
+                    <li class="list-group-item"><a href="/index.html">Beranda</a></li>
                     <li class="list-group-item"><a href="about_us.html">Tentang Kami</a></li>
                     <li class="list-group-item"><a href="profil.html">Profil</a></li>
                     <li class="list-group-item"><a href="#">Test Kulit Anda</a></li>
                 </ul>
-                <button type="button" class="btn btn-primary"><i class="me-2 fa-regular fa-user"></i>Masuk</button>
+                <a href="register/signup.html" class="btn-register">
+                    <button type="button" class="btn btn-primary"><i class="me-2 fa-regular fa-user"></i>Masuk</button>
+                </a>
             </div>
         </nav>
     </header>
     <!-- Navigation Bar -->
 
-
-    <!-- Tampilan awal -->
-    <section class="main-content">
+    <!-- SkinType Landing Page-->
+    <section class="main-content skintype-landing">
         <div class="container">
             <div class="row">
-                <div class="content col-lg-12 d-flex align-items-center justify-content-between">
-                    <div class="icon-besar col-lg-5">
-                        <img class="img-fluid" style="width: 75%; height: 80%; border-radius: 50%"
-                            src="../assets/images/icon/icon_besar.png" />
+                <div class="col-lg-12 d-flex justify-content-center align-items-center flex-column">
+                    <div class="text-content col-lg-12">
+                        <h1>Gratis Tes Tipe Kulit</h1>
                     </div>
-
-                    <div class="beauty d-flex align-items-center">                     
-                        <div class="box-beauty"></div>
-                        <div class="text-beauty">
-                            <h1>Beauty</h1>  
-                            <h5>Platform media yang dibuat khusus
-                                memenuhi segala hal kecantikan, website ini bertujuan
-                                menginspirasi wanita & pria Indonesia Untuk merawat diri dan
-                                dapat percaya diri dengan kulitnya sendiri serta membantu mengetahui
-                                jenis kulit seseorang dan memberikan rekomendasi produk yang
-                                sesuai dengan jenis kulitnya </h5>
+                    <div class="content-body col-lg-10">
+                        <h2>"Tipe kulit merupakan karakteristik alami dari tubuh kita yang memengaruhi bagaimana produk perawatan kulit bekerja. Mengikuti tes tipe kulit penting karena hal itu membantu kita memahami kebutuhan kulit kita dengan lebih baik. <span class="oren">Dengan mengetahui tipe kulit kita, kita dapat memilih produk perawatan yang sesuai, menghindari reaksi alergi atau iritasi, serta menjaga kulit agar tetap sehat dan berseri.</span> Jadi, jangan ragu untuk mengikuti tes tipe kulit agar perawatan kulitmu lebih efektif dan tepat sasaran."</h2>
+                    </div>
+                </div>
+                <div class="col-lg-12 d-flex justify-content-center align-items-center flex-column">
+                    <div class="container">
+                        <div class="row">
+                            <dic class="card-1 col-4">
+                                <div class="card">
+                                    <img src="assets/images/content/skintype-card-1.jpg" class="card-img-top" alt="skintype-landing">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Selesaikan Tes</h5>
+                                      <p class="card-text">Jadilah diri sendiri dan jawablah dengan jujur untuk mengetahui jenis kulit Anda.</p>
+                                    </div>
+                                  </div>
+                            </dic>
+                            <dic class="card-1 col-4">
+                                <div class="card">
+                                    <img src="assets/images/content/skintype-card-1.jpg" class="card-img-top" alt="skintype-landing">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Selesaikan Tes</h5>
+                                      <p class="card-text">Jadilah diri sendiri dan jawablah dengan jujur untuk mengetahui jenis kulit Anda.</p>
+                                    </div>
+                                  </div>
+                            </dic>
+                            <dic class="card-1 col-4">
+                                <div class="card">
+                                    <img src="assets/images/content/skintype-card-1.jpg" class="card-img-top" alt="skintype-landing">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Selesaikan Tes</h5>
+                                      <p class="card-text">Jadilah diri sendiri dan jawablah dengan jujur untuk mengetahui jenis kulit Anda.</p>
+                                    </div>
+                                  </div>
+                            </dic>
                         </div>
                     </div>
                 </div>
@@ -110,37 +133,7 @@
         </div>
     </section>
 
-    <!-- Tampilan visi misi -->
-    <section class="visi_misi">
-        <div class="container-fluid">
-            <div class="row"> 
-                <div class="col-lg-12 d-flex justify-content-center">
-                    <div class="col-10 title-visimisi p-4 d-flex justify-content-center">
-                        <div class="title-visi col-lg-4 align-self-start">
-                            <h1>Visi :</h1>
-                            <h5>Menjadi perusahaan perawatan kulit
-                                terdepan yang menginspirasi dan memberdayakan
-                                semua orang untuk merasa percaya diri dengan
-                                kecantikan alami mereka</h5>
-                        </div>
-                        <div class="title-misi col-lg-4 align-self-end">
-                            <h1>Misi :</h1>
-                            <h5>Merekomendasikan produk skincare sesuai 
-                                dengan type kulit dan Memberikan edukasi dan 
-                                informasi yang bermanfaat tentang kesehatan dan 
-                                kecantikan kulit</h5>
-                        </div>             
-                        <div class="pose_male col-lg-4">
-                            <img class="img-fluid" src="/assets/images/icon/pose_male.png">
-                                  
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </section>
+    <!-- SkinType Landing Page-->
 
     <!-- Footer -->  
     <footer>
@@ -149,7 +142,7 @@
                 <div class="content col-12 d-flex justify-content-around">
                     <div class="col-3 detail px-4 align-items-center">
                         <div class="name-web mb-4">
-                            <img src="../assets/images/icon/icon-web.png" alt="" class="me-4">
+                            <img src="assets/images/icon/icon-web.png" alt="" class="me-4">
                             <span>Beautyy</span>
                         </div>
                         <div class="desc">
@@ -160,7 +153,7 @@
                     <div class="col-2 navigasi">
                         <h2 class="mx-4">Navigasi</h2>
                         <ul>
-                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="profil.html">Profil</a></li>
                             <li><a href="about_us.html">About Us</a></li>
                             <li><a href="#">Test Skin Type</a></li>
@@ -190,8 +183,7 @@
     </div>
     <!-- Footer -->
 
-    <script src="../assets/js/script.js"></script>    
-
-    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
