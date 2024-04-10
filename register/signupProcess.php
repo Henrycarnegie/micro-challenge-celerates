@@ -1,6 +1,7 @@
 <?php
     include "config.php";
-
+    session_start();
+    
     if (isset($_POST["signup"])) {
         if (empty($_POST["name"])) {
             die("Name is required");

@@ -1,17 +1,16 @@
-<!-- <?php
+<?php
     session_start();
 
-    if ( isset ($_POST["btn-account"])) {
+    if (isset($_POST["btn-account"])) {
         if (isset ($_SESSION["is_login"])) {
             header("location: profil.php");
             exit();
         } else {
-            header("location: ../register/signup.php");
+            header("location: register/signup.php");
             exit();
         }
     }
-
-?> -->
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -90,16 +89,16 @@
                 <form action="" method="post">
                     <button type="submit" name="btn-account" class="btn btn-primary btn-register">
                         <i class="me-2 fa-regular fa-user"></i>
-                        <!-- <?php
+                        <?php
                             // Periksa apakah nama pengguna tersedia dalam sesi
                             if (isset($_SESSION["name"])) {
                                 echo $_SESSION["name"];
                             } else {
-                                echo "Account";
+                                echo "Signup";
                             }
-                        ?> -->
-                        masuk
+                        ?> 
                     </button>
+                    
                 </form>
             </div>
         </nav>

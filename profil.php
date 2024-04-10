@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,10 +64,17 @@
                             <span>Password</span>
                             <input type="text" class="form-control" placeholder="******" disabled>
                         </div>
-                        <div class="container-btn">
+                        <div class="container-btn d-flex">
                             <button type="button" class="btn btn-primary me-2"><i class="fa-solid fa-pencil me-2"></i>Edit</button>
                             <button type="button" class="btn btn-primary me-2"><i class="fa-solid fa-file-contract me-2"></i>Test ulang</button>
-                            <button type="button" name="logout" class="btn btn-danger me-2"><i class="fa-solid fa-right-from-bracket me-2"></i>Keluar</button>
+
+                            <form action="register/logoutProcess.php" method="post">
+                                <button type="submit" name="logout" class="btn btn-danger btn-register">
+                                    <i class="me-2 fa-regular fa-user"></i>
+                                    logout
+                                </button>
+                            </form>
+
                         </div>
                     </div>
                     <div class="image col-12 col-lg-6 d-flex justify-content-center align-items-center">

@@ -26,7 +26,7 @@
 
 <body>
     <!-- Header -->
-    
+    <?php include "layout/headerPages.php"?>
     <!-- Header -->
     
     <!-- Tampilan Awal Pengguna -->
@@ -51,7 +51,7 @@
     </section>
     <!-- Tampilan Awal Pengguna -->
 
-    <!-- <?php include "layout/productCarousel.html" ?>  -->
+    <?php include "layout/productCarousel.html" ?>
 
     <!-- Top Brand -->
     <section class="top-brand pb-4">
@@ -176,7 +176,7 @@
     <!--Section FAQ-->
 
     <!-- Foooter -->
-    <!-- <?php include "layout/footer.html" ?> -->
+    <?php include "layout/footer.html" ?>
     <!-- Foooter -->
 
     <script src="assets/js/script.js"></script>
