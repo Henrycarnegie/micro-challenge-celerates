@@ -26,7 +26,7 @@
 
 <body>
     <!-- Navigation Bar -->
-    <?php include "layout/headerPages.php" ?>
+    <?php include "layout/headerPages.html" ?>
     <!-- Navigation Bar -->
     
     <!-- Tampilan Awal Pengguna -->

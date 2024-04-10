@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
     session_start();
 
     if ( isset ($_POST["btn-account"])) {
@@ -11,7 +11,7 @@
         }
     }
 
-?>
+?> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +25,7 @@
     <!-- CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
-
+    
     <!-- Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -90,18 +90,16 @@
                 <form method="post">
                     <button type="submit" name="btn-account" class="btn btn-register">
                         <i class="me-2 fa-regular fa-user"></i>
-                        <?php
+                        <!-- <?php
                             // Periksa apakah nama pengguna tersedia dalam sesi
                             if (isset($_SESSION["name"])) {
                                 echo $_SESSION["name"];
                             } else {
                                 echo "Account";
                             }
-                        ?>
+                        ?> -->
                     </button>
                 </form>
-                <!-- <a href="../register/signup.php" name="btn-register" class="btn-register">
-                </a> -->
             </div>
         </nav>
     </header>
