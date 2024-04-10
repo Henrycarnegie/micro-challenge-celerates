@@ -1,5 +1,17 @@
 <?php
     include "config.php";
+
+    // if (isset($_SESSION["is_login"]) ) {
+    //     header("location: ../profil.php");
+    //     exit();
+    // }
+    
+    if ( isset ($_POST["signup"])) {
+        if (isset ($_SESSION["is_login"])) {
+            header("location: ../profil.php");
+            exit();
+        }
+    }
     
     if (isset($_POST["signup"])) {
         if (empty($_POST["name"])) {
@@ -31,6 +43,8 @@
 
         if ($db->query($inputData)) {
             echo "Berhasil";
+            header("location: login.php");
+            exit();
         } else {
             echo "Data gagal dimasukan";
         }

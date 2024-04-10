@@ -1,3 +1,17 @@
+<?php
+    session_start();
+
+    if ( isset ($_POST["btn-account"])) {
+        if (isset ($_SESSION["is_login"])) {
+            header("location: ../profil.php");
+            exit();
+        } else {
+            header("location: ../register/signup.php");
+            exit();
+        }
+    }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +40,7 @@
     <header class="header fixed-top">
         <nav class="col-12 navbar">
             <div class="col-12 col-lg-6 left-container d-flex justify-content-center align-items-center">
-                <img class="me-3 icon-web" src="../assets/images/icon/icon-web.png" alt="logo-web">
+                <img class="me-3 icon-web" src="assets/images/icon/icon-web.png" alt="logo-web">
                 <div class="searchbar col-12 col-lg-6">
                     <form action="#" class="col-10">
                         <div class="d-flex align-items-center px-2">
@@ -68,14 +82,24 @@
             </div>
             <div class="col-lg-6 right-container d-flex justify-content-center align-items-center">
                 <ul class="list-group pe-2">
-                    <li class="list-group-item"><a href="../index.php">Beranda</a></li>
+                    <li class="list-group-item"><a href="index.php">Beranda</a></li>
                     <li class="list-group-item"><a href="about_us.php">Tentang Kami</a></li>
                     <li class="list-group-item"><a href="profil.php">Profil</a></li>
                     <li class="list-group-item"><a href="#">Test Kulit Anda</a></li>
                 </ul>
-                <a href="register/signup.html" class="btn-register">
-                    <button type="button" class="btn btn-primary"><i class="me-2 fa-regular fa-user"></i>Masuk</button>
-                </a>
+                <form method="post">
+                    <button type="submit" name="btn-account" class="btn btn-primary">
+                        <i class="me-2 fa-regular fa-user"></i>
+                        <?php
+                            // Periksa apakah nama pengguna tersedia dalam sesi
+                            if (isset($_SESSION["name"])) {
+                                echo $_SESSION["name"];
+                            } else {
+                                echo "Account";
+                            }
+                        ?>
+                    </button>
+                </form>
             </div>
         </nav>
     </header>

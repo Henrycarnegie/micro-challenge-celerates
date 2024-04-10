@@ -1,3 +1,9 @@
+<?php
+    if (isset ($_SESSION["is_login"])) {
+        header("location: ../profil.php");
+        exit();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,7 +60,7 @@
                             <button type="submit" name="signup" class="btn btn-primary">Submit</button>
                         </div>
                         <div class="go-login">
-                            <h6>Sudah punya akun? <a href="login.html">Masuk</a></h6>
+                            <h6>Sudah punya akun? <a href="login.php">Masuk</a></h6>
                         </div>
                     </form>
                 </div>

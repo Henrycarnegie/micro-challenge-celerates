@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Logo-Website Name -->
-    <link rel="icon" href="../assets/images/icon/icon-web.png">
+    <link rel="icon" href="assets/images/icon/icon-web.png">
     <title>Micro-Challenge</title>
 
     <!-- CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -24,7 +24,7 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <?php include "../layout/headerPages.html" ?>
+    <?php include "layout/headerPages.php" ?>
     <!-- Navigation Bar -->
     
     <!-- Tampilan awal -->
@@ -34,8 +34,8 @@
                 <div class="product_hadalabo col-lg-12 d-flex justify-content-between">
                     <div class="item_hadalabo d-flex justify-content-between">
                         <div class="card_hadalabo">
-                            <img src="../assets/images/content/product_hadalabo1.png" alt="">
-                            <span><img src="../assets/images/icon/button_fav.png" alt=""></span>
+                            <img src="assets/images/content/product_hadalabo1.png" alt="">
+                            <span><img src="assets/images/icon/button_fav.png" alt=""></span>
                             <div class="card-body">
                             <h5>Hada Labo Aha + Bha Acne</h5> 
                             <h5>Control Face Wash</h5>
@@ -77,15 +77,15 @@
                 </div>
                 <div class="container-preview col-lg-12 d-flex justify-content-center align-items-center">
                     <div class="card-small d-flex flex-column">
-                        <img src="../assets/images/content/new_product_1.png" alt="new product">
+                        <img src="assets/images/content/new_product_1.png" alt="new product">
                         <button type="button" class="btn btn-primary">Preview</button>
                     </div>
                     <div class="card-big d-flex flex-column">
-                        <img src="../assets/images/content/new_product_2.png" alt="new product">
+                        <img src="assets/images/content/new_product_2.png" alt="new product">
                         <button type="button" class="btn btn-primary">Preview</button>
                     </div>
                     <div class="card-small d-flex flex-column">
-                        <img src="../assets/images/content/new_product_3.png" alt="new product">
+                        <img src="assets/images/content/new_product_3.png" alt="new product">
                         <button type="button" class="btn btn-primary">Preview</button>
                     </div>
                 </div>
@@ -110,55 +110,11 @@
     </section>
     
     
-    <!-- Footer -->  
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="content col-12 d-flex justify-content-around">
-                    <div class="col-3 detail px-4 align-items-center">
-                        <div class="name-web mb-4">
-                            <img src="../assets/images/icon/icon-web.png" alt="" class="me-4">
-                            <span>Beautyy</span>
-                        </div>
-                        <div class="desc">
-                            <span>Kecantikan tidak hanya datang dari dalam tetapi juga datang dari luar. Jadi, Anda juga
-                                perlu menjaga kesehatan kulit Anda</span>
-                        </div>
-                    </div>
-                    <div class="col-2 navigasi">
-                        <h2 class="mx-4">Navigasi</h2>
-                        <ul>
-                            <li><a href="../index.html">Home</a></li>
-                            <li><a href="profil.html">Profil</a></li>
-                            <li><a href="about_us.html">About Us</a></li>
-                            <li><a href="#">Test Skin Type</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-4 temukan">
-                        <h2 class="mx-4">Temukan Lainnya</h2>
-                        <ul>
-                            <li><a href="#">Brand</a></li>
-                            <li><a href="#">Product</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-2 tentang">
-                        <h2 class="mx-4">About Us</h2>
-                        <ul>
-                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <div class="copyright">
-        <span>Copyright © 2024 All Right Reserved</span>
-    </div>
-    <!-- Footer -->
+    <!-- Foooter -->
+    <?php include "layout/footer.html" ?>
+    <!-- Foooter -->
 
-    <script src="../assets/js/script.js"></script>
-    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

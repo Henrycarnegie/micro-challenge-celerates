@@ -1,6 +1,3 @@
-<?
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +27,7 @@
         <div class="container">
             <div class="container-content col-12 d-flex">
                 <div class="col-8 form-login d-flex justify-content-center align-items-center">
-                    <form action="login.php" method="post" class="col-8">
+                    <form action="loginProcess.php" method="post" class="col-8">
                         <div class="form-title mb-lg-5">
                             <h3 class="text">Selamat datang kembali!</h3>
                         </div>

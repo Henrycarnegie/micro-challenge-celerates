@@ -367,6 +367,35 @@ header.header{
     font-size: 14px;
 }
 
+.login-failed {
+    background-color: var(--Background-Stroke);
+    color: var(--Highlight-Secondary);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 200px;
+    border-radius: 10%;
+    padding: 50px 16px;
+    text-align: center;
+}
+
+.login-failed .icon {
+    background-color: var(--Highlight);
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 20px;
+    border-radius: 10%;
+}
+
+.login-failed .icon i {
+    font-size: 50px;
+    font-weight: 900;
+}
+
 
 /* Sign Up */
 

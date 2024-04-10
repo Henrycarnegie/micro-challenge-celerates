@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Logo-Website Name -->
-    <link rel="icon" href="../assets/images/icon/icon-web.png">
+    <link rel="icon" href="assets/images/icon/icon-web.png">
     <title>Micro-Challenge</title>
 
     <!-- CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -26,7 +27,7 @@
 
 <body>
     <!-- Navigation Bar -->
-    <?php include "../layout/headerPages.html" ?>
+    <?php include "layout/headerPages.php" ?>
     <!-- Navigation Bar -->
     
     <!-- Tampilan awal -->
@@ -36,7 +37,7 @@
                 <div class="content col-lg-12 d-flex align-items-center justify-content-between">
                     <div class="icon-besar col-lg-5">
                         <img class="img-fluid" style="width: 75%; height: 80%; border-radius: 50%"
-                            src="../assets/images/icon/icon_besar.png" />
+                            src="assets/images/icon/icon_besar.png" />
                     </div>
 
                     <div class="title-beauty col-lg-4 d-flex align-items-center">                     
@@ -77,7 +78,7 @@
                         </div>             
                         <div class="pose_male col-lg-4">
                             <img class="img-fluid" style="width: 100%; height: 100%; border-radius: 50%"
-                                    src="../assets/images/icon/pose_male.png" />
+                                    src="assets/images/icon/pose_male.png" />
                         </div>
                     </div>
                     </div>
@@ -89,10 +90,10 @@
     <!-- Tampilan visi misi -->
     
     <!-- Foooter -->
-    <?php include "../layout/footer.html" ?>
+    <?php include "layout/footer.html" ?>
     <!-- Foooter -->
 
-    <script src="../assets/js/script.js"></script>    
-    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>    
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
