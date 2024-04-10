@@ -1,18 +1,6 @@
 <?php
     include "config.php";
 
-    // if (isset($_SESSION["is_login"]) ) {
-    //     header("location: ../profil.php");
-    //     exit();
-    // }
-    
-    if ( isset ($_POST["signup"])) {
-        if (isset ($_SESSION["is_login"])) {
-            header("location: ../profil.php");
-            exit();
-        }
-    }
-    
     if (isset($_POST["signup"])) {
         if (empty($_POST["name"])) {
             die("Name is required");

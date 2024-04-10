@@ -3,7 +3,7 @@
 
     if ( isset ($_POST["btn-account"])) {
         if (isset ($_SESSION["is_login"])) {
-            header("location: ../profil.php");
+            header("location: profil.php");
             exit();
         } else {
             header("location: ../register/signup.php");
@@ -24,7 +24,7 @@
 
     <!-- CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 
     <!-- Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -52,7 +52,7 @@
                     <div id="modalOpen" class="overlay hide col-4">
                         <div class="recommendation">
                             <a href="search_result.php" class="product-img">
-                                <img src="../assets/images/content/recom_item1.png" alt="" class="img-fluid me-2">
+                                <img src="assets/images/content/recom_item1.png" alt="" class="img-fluid me-2">
                             </a>
                             <a href="search_result.php" class="product-name">
                                 <h6>Toner "The Originote"</h6>
@@ -61,7 +61,7 @@
                         </div>
                         <div class="recommendation">
                             <a href="search_result.php" class="product-img">
-                                <img src="../assets/images/content/recom_item1.png" alt="" class="img-fluid me-2">
+                                <img src="assets/images/content/recom_item1.png" alt="" class="img-fluid me-2">
                             </a>
                             <a href="search_result.php" class="product-name">
                                 <h6>Toner "The Originote"</h6>
@@ -70,7 +70,7 @@
                         </div>
                         <div class="recommendation">
                             <a href="search_result.php" class="product-img">
-                                <img src="../assets/images/content/recom_item1.png" alt="" class="img-fluid me-2">
+                                <img src="assets/images/content/recom_item1.png" alt="" class="img-fluid me-2">
                             </a>
                             <a href="search_result.php" class="product-name">
                                 <h6>Toner "The Originote"</h6>
@@ -88,7 +88,7 @@
                     <li class="list-group-item"><a href="#">Test Kulit Anda</a></li>
                 </ul>
                 <form method="post">
-                    <button type="submit" name="btn-account" class="btn btn-primary">
+                    <button type="submit" name="btn-account" class="btn btn-register">
                         <i class="me-2 fa-regular fa-user"></i>
                         <?php
                             // Periksa apakah nama pengguna tersedia dalam sesi
@@ -100,6 +100,8 @@
                         ?>
                     </button>
                 </form>
+                <!-- <a href="../register/signup.php" name="btn-register" class="btn-register">
+                </a> -->
             </div>
         </nav>
     </header>

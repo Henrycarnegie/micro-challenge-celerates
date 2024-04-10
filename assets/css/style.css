@@ -160,14 +160,14 @@ header.header{
     background-color: var(--Background-Stroke);
 }
 
-.header .right-container a .btn {
+.header .right-container button {
     background-color: inherit;
     border-color: var(--Background-Stroke);
     color: var(--Background-Stroke);
     font-size: 14px;
 }
 
-.header .right-container a .btn:hover {
+.header .right-container button:hover {
     background-color: var(--Background-Stroke);
     border: var(--Background-Stroke);
     color: var(--Highlight-Secondary);
