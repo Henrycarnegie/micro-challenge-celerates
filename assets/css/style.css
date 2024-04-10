@@ -160,14 +160,14 @@ header.header{
     background-color: var(--Background-Stroke);
 }
 
-.header nav .right-container form button {
-    background-color: var(--Agree-Option-SkinTest);
+.header .right-container button.btn {
+    background-color: inherit;
     border-color: var(--Background-Stroke);
     color: var(--Background-Stroke);
-    font-size: 44px;
+    font-size: 14px;
 }
 
-.header nav .right-container form button.btn:hover {
+.header .right-container button.btn:hover {
     background-color: var(--Background-Stroke);
     border: var(--Background-Stroke);
     color: var(--Highlight-Secondary);
