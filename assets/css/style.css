@@ -63,34 +63,43 @@ header.header{
     background-color: var(--Paragraph-Main);
     margin-bottom: 150px;
     padding: 8px 0px;
+    display: flex;
+    justify-content: center;
 }
 
 .header .navbar {
     background-color: inherit;
     min-height: inherit;
+    display: inline-flex;
+    justify-content: space-around;
 }
 
-.header .left-container .searchbar {
-    background-color: var(--Paragraph-Main);
+.header .navbar .left-container h6 {
+    font-family: 'Script MT Bold', sans-serif;
+    font-size: 22px;
+}
+
+.header .searchbar {
+    background-color: var(--Highlight-Secondary);
     border-radius: 20px;
 }
 
-.header .left-container .searchbar form {
+.header .searchbar form {
     background-color: var(--Highlight-Secondary);
     border-radius: inherit;
 }
 
-.header .left-container .searchbar input {
+.header .searchbar input {
     background-color: inherit;
     border: none;
     border-radius: inherit;
 }
 
-.header .left-container .searchbar form input:focus {
+.header .searchbar form input:focus {
     box-shadow: none;
 }
 
-.header .left-container .searchbar input::placeholder{
+.header .searchbar input::placeholder{
     font-size: 12px;
 }
 
@@ -162,19 +171,20 @@ header.header{
     background-color: var(--Background-Stroke);
 }
 
-.header .right-container .dropdown-toggle form .btn-register {
+.header .right-container .dropdown button.btn-register {
     background-color: inherit;
     border-color: var(--Background-Stroke);
     color: var(--Background-Stroke);
     font-size: 14px;
 }
 
-.header .right-container .dropdown-item form .btn-register {
-    background-color: var(--Agree-Option-SkinTest) !important;
-    border: 0px;
+.header .right-container .dropdown button.btn-register:hover:active {
+    background-color: var(--Background-Stroke);
+    border: var(--Background-Stroke);
+    color: var(--Highlight-Secondary);
 }
 
-.header .right-container button.btn:hover {
+.header .right-container .dropdown button.btn-register:hover {
     background-color: var(--Background-Stroke);
     border: var(--Background-Stroke);
     color: var(--Highlight-Secondary);
