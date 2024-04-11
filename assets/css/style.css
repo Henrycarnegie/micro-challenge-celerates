@@ -162,15 +162,15 @@ header.header{
     background-color: var(--Background-Stroke);
 }
 
-.header .right-container .dropdown .dropdown-toggle button.btn {
+.header .right-container .dropdown-toggle form .btn-register {
     background-color: inherit;
     border-color: var(--Background-Stroke);
     color: var(--Background-Stroke);
     font-size: 14px;
 }
 
-.header .right-container .dropdown .dropdown-item button.btn {
-    background-color: var(--Agree-Option-SkinTest);
+.header .right-container .dropdown-item form .btn-register {
+    background-color: var(--Agree-Option-SkinTest) !important;
     border: 0px;
 }
 
