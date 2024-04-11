@@ -70,7 +70,7 @@
 
                             <form action="register/logoutProcess.php" method="post">
                                 <button type="submit" name="logout" class="btn btn-danger btn-register">
-                                    <i class="me-2 fa-regular fa-user"></i>
+                                    <i class="fa-solid fa-right-from-bracket"></i>
                                     logout
                                 </button>
                             </form>

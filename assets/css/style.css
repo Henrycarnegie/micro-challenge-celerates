@@ -1,4 +1,6 @@
+/* Font Family */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/script-mt');
 
 /* Root Color */
 :root {
@@ -160,11 +162,16 @@ header.header{
     background-color: var(--Background-Stroke);
 }
 
-.header .right-container button.btn {
+.header .right-container .dropdown .dropdown-toggle button.btn {
     background-color: inherit;
     border-color: var(--Background-Stroke);
     color: var(--Background-Stroke);
     font-size: 14px;
+}
+
+.header .right-container .dropdown .dropdown-item button.btn {
+    background-color: var(--Agree-Option-SkinTest);
+    border: 0px;
 }
 
 .header .right-container button.btn:hover {

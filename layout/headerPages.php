@@ -1,18 +1,19 @@
 <?php
-    session_start();
+session_start();
 
-    if (isset($_POST["btn-account"])) {
-        if (isset ($_SESSION["is_login"])) {
-            header("location: profil.php");
-            exit();
-        } else {
-            header("location: register/signup.php");
-            exit();
-        }
+if (isset($_POST["btn-account"])) {
+    if (isset($_SESSION["is_login"])) {
+        header("location: profil.php");
+        exit();
+    } else {
+        header("location: register/signup.php");
+        exit();
     }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,16 +25,16 @@
     <!-- CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
-    
+
     <!-- Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- Font Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation Bar -->
     <header class="header fixed-top">
@@ -44,8 +45,7 @@
                     <form action="#" class="col-10">
                         <div class="d-flex align-items-center px-2">
                             <i class="fa fa-search"></i></button>
-                            <input id="openSearchbar" class="form-control" type="email"
-                                placeholder="Cari produk anda disini ...">
+                            <input id="openSearchbar" class="form-control" type="email" placeholder="Cari produk anda disini ...">
                         </div>
                     </form>
                     <div id="modalOpen" class="overlay hide col-4">
@@ -86,25 +86,51 @@
                     <li class="list-group-item"><a href="profil.php">Profil</a></li>
                     <li class="list-group-item"><a href="#">Test Kulit Anda</a></li>
                 </ul>
-                <form action="" method="post">
-                    <button type="submit" name="btn-account" class="btn btn-primary btn-register">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" name="btn-account" type="button" id="dropdownMenuAccount" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="me-2 fa-regular fa-user"></i>
                         <?php
                             // Periksa apakah nama pengguna tersedia dalam sesi
                             if (isset($_SESSION["name"])) {
                                 echo $_SESSION["name"];
                             } else {
-                                echo "Signup";
+                                echo "Masuk";
                             }
-                        ?> 
+                        ?>
                     </button>
-                    
-                </form>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li>
+                            <a class="dropdown-item" href="profil.php">
+                                <strong>Profil</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="dropdown-item">
+                                <?php
+                                    if (isset($_SESSION["is_login"])) {
+                                        echo "
+                                        <form action='register/logoutProcess.php' method='post'>
+                                            <button type='submit' name='logout' class='btn btn-danger btn-register'>
+                                                logout
+                                            </button>
+                                        </form>
+                                        ";
+                                    } else {
+                                        echo "
+                                        <a href='register/signup.php'>
+                                            Signup
+                                        </a>
+                                        ";
+                                    }
+                                ?>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
     <!-- Navigation Bar -->
 </body>
-</html>   
-    
-   
+
+</html>
