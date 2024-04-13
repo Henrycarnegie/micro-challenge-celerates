@@ -34,9 +34,16 @@
             <div class="row">
                 <div class="content col-lg-12 d-flex justify-content-between">
                     <div class="detail col-12 col-lg-6">
+                        <?php if (($_SESSION["login_failed"]) === true) : ?>
+                            <h1>Belum Login</h1>
+                        
+                            <?php else : ?>
+                                <h1>Sudah Login</h1>
+                        <?php endif ?>
                         <div class="item">
                             <span>Nama</span>
-                            <input type="text" class="form-control" placeholder="henry carnegie" disabled>
+                            <input type="text" class="form-control" placeholder= '<?php echo $_SESSION["name"] ?>' disabled>
+
                         </div>
                         <div class="detail-collapse d-flex justify-content-between">
                             <div class="item col-12 col-lg-6 me-4">
