@@ -37,6 +37,7 @@
         } else {
             echo "Data gagal dimasukan";
         }
+        $db -> close();
     }
 
 ?>

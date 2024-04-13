@@ -1,5 +1,9 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,10 +22,12 @@
     <!-- Font Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+    
+    <script src="../assets/js/script.js"></script>
 </head>
+
 <body>
     <section class="login">
         <div class="container">
@@ -31,7 +37,7 @@
                         <div class="form-title mb-lg-5">
                             <h3 class="text">Selamat datang kembali!</h3>
                         </div>
-                        <div class="col-12" >
+                        <div class="col-12">
                             <input name="email" type="email" class="form-control form-control-lg" id="inputEmail" placeholder="alamat email">
                         </div>
                         <div class="col-12">
@@ -50,6 +56,25 @@
                             <button type="submit" name="login" class="btn btn-primary">Submit</button>
                         </div>
                     </form>
+                        <div id='loginFailedModal' class='login-failed'>
+                            <div class='icon'>
+                                <i class='fa-solid fa-check'></i>
+                            </div>
+                            <h1>Failed!!</h1>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, at.</span>
+                        </div>
+                        <?php
+                            if ( isset ( $_SESSION["login_failed"]) && !isset ($_SESSION["is_login"]) ) {
+                                var_dump($_SESSION["login_failed"]);
+                                var_dump($_SESSION["is_login"]);
+                                echo "Gimana sih";
+                            } else {
+                                echo "
+                                    <script>showModal();</script>  
+                                    Metallllll
+                                ";
+                            }
+                        ?>
                 </div>
                 <div class="col-4 img-login">
                     <img src="../assets/images/content/3d_login.png" alt=>
@@ -58,7 +83,7 @@
         </div>
     </section>
 
-    <script src="../assets/js/script.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>

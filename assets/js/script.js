@@ -26,3 +26,15 @@ document.addEventListener('click', e => {
         modalAddFavorite.classList.add('active')
     }
 })
+
+function showModal() {
+    
+    const modalLoginFailed = document.querySelector('#loginFailedModal');
+    modalLoginFailed.classList.add('hide');
+
+    document.addEventListener('click', e => {
+        if(!modalLoginFailed.contains(e.target) && e.target !== modalLoginFailed){
+            modalLoginFailed.classList.remove('hide')
+        }
+    })
+}
