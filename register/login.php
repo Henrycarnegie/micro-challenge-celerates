@@ -56,25 +56,22 @@
                             <button type="submit" name="login" class="btn btn-primary">Submit</button>
                         </div>
                     </form>
-                        <div id='loginFailedModal' class='login-failed'>
-                            <div class='icon'>
-                                <i class='fa-solid fa-check'></i>
-                            </div>
-                            <h1>Failed!!</h1>
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, at.</span>
+                    <div id='loginFailedModal' class='login-failed hide'>
+                        <div class='icon'>
+                            <i class='fa-solid fa-check'></i>
                         </div>
-                        <?php
-                            if ( isset ( $_SESSION["login_failed"]) && !isset ($_SESSION["is_login"]) ) {
-                                var_dump($_SESSION["login_failed"]);
-                                var_dump($_SESSION["is_login"]);
-                                echo "Gimana sih";
-                            } else {
-                                echo "
-                                    <script>showModal();</script>  
-                                    Metallllll
-                                ";
-                            }
-                        ?>
+                        <h1>Failed!!</h1>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, at.</span>
+                    </div>
+                    <?php 
+                        if (($_SESSION["login_failed"]) === true) {
+                            echo "sudah di klik login";
+                            echo "<script>showModal();</script>";
+
+                        } else {
+                            echo "belum di klik login";
+                        }
+                    ?>
                 </div>
                 <div class="col-4 img-login">
                     <img src="../assets/images/content/3d_login.png" alt=>
