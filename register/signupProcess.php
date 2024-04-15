@@ -32,7 +32,7 @@
 
         if ($db->query($inputData)) {
             echo "Berhasil";
-            header("location: login.php");
+            header("location: setProfil.php");
             exit();
         } else {
             echo "Data gagal dimasukan";

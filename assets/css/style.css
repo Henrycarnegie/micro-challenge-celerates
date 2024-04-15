@@ -237,7 +237,7 @@ header.header{
 
 /* ======================================== */
 
-/* Sign Up */
+/* Register Account */
 
 .signup .container-content,
 .login .container-content {
@@ -414,7 +414,55 @@ header.header{
 }
 
 
-/* Sign Up */
+/* Register Account */
+
+/* ======================================== */
+
+/* Set Profile */
+
+section.setProfil {
+    width: 50%;
+    height: 60%;
+    padding: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--Background-Stroke);
+    border-radius: 20px;
+    border: 0.8px solid var(--Background-Stroke);
+}
+
+.setProfil form {
+    width: 80%;
+    height: 80%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.setProfil .bg-content {
+    background-image: url(../images/background/set-profil.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.setProfil .form-switch {
+    padding-left: 3rem;
+}
+
+.setProfil form input {
+    font-size: 13px;
+}
+
+.setProfil .gender label {
+    color: var(--Highlight-Secondary);
+}
+
+/* Set Profile */
 
 /* ======================================== */
 
