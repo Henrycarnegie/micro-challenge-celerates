@@ -1,7 +1,6 @@
 <?php
     session_start();
     include "config.php";
-    
 
     if (isset($_POST["login"])) {
         //check input from user to database
@@ -17,17 +16,15 @@
             $_SESSION["name"] = $data["name"];
             $_SESSION["email"] = $data["email"];
             $_SESSION["is_login"] = true;
-            $_SESSION["login_failed"] == false;
-            
+
             header("location: ../profil.php");
             exit();
             $db->close();
+            $_POST["login"] = true;
         } else {
             $db->close();
             $_SESSION["is_login"] = false;
-            $_SESSION["login_failed"] =true;
             header("location: login.php");
         }
-        
     }
 ?>

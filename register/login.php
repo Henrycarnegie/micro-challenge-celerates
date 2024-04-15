@@ -1,6 +1,4 @@
-<?php
-    session_start();
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -63,11 +61,10 @@
                             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, at.</span>
                         </div>
                         <?php
-                            if ($_SESSION["login_failed"] == true) {
-                                echo "sudah di klik login";
+                            require "loginProcess.php";
+                            if ($_SESSION["is_login"] == false) {
                                 echo "<script>showModal();</script>";
-                            } else {
-                                echo "belum di klik login";
+                                $_SESSION["is_login"] = true;
                             }
                         ?>
                     </form>

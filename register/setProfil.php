@@ -50,7 +50,7 @@ require "loginProcess.php";
 
                 </div>
                 <div class="col-10 mb-3">
-                    <input type="text" class="form-control" name="age" placeholder="masukan umur anda contoh: 22">
+                    <input type="text" class="form-control" name="age" placeholder="masukan umur anda">
                 </div>
                 <div class="gender d-flex mb-5">
                     <label class="form-check-label" for="flexSwitchCheckChecked">laki-laki</label>
