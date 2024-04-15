@@ -1394,6 +1394,174 @@ section .visi_misi {
 
 /* SkinType Landing */
 
+/* SkinType Result */
+
+.main-content .kering {
+    position: relative;
+    top: 10px;
+    right: -70px;
+    justify-content: center;
+    align-items: center;
+    width: 1175px;
+    height: 1411px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    opacity: 0.85;
+    background: linear-gradient(313deg, rgba(255, 255, 255, 0.737)0%, rgba(255, 255, 255, 0.715) 100%);
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(30px);
+}
+
+.main-content .box_kering {
+    position: relative;
+    top: 600px;
+    width: 1175px;
+    height: 1411px;
+    transform: rotate(0.259deg);
+    flex-shrink: 0;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    opacity: 0.85;
+    background: linear-gradient(312deg, rgba(255, 255, 255, 0.984) 0%, rgba(255, 255, 255, 0.76) 99.37%);
+    box-shadow: 0px 0px 97.675px 0px #D4D4D4, 0px 0px 55.814px 0px #D4D4D4, 0px 0px 32.558px 0px #D4D4D4, 0px 0px 16.279px 0px #D4D4D4, 0px 0px 4.651px 0px #D4D4D4, 0px 0px 2.326px 0px #D4D4D4;
+}
+
+.main-content .text_kering {
+    position: relative;
+    top: -700px;
+}
+
+.text_kering h3 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-align: center;
+}
+
+.text_kering h1 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    text-align: center;
+}
+
+.kering_img {
+    position: relative;
+    top: -680px;
+    display: inline-flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background: linear-gradient(228deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.05) 100%);
+    box-shadow: 0px 4px 30px -1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(22.5px);
+}
+
+.deskripsi {
+    position: relative;
+    top: -630px;
+    left: 40px;
+    width: 800px;
+}
+
+.deskripsi b {
+    text-align: justify;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}    
+
+.deskripsi h6 {
+    text-align: justify;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+section .text_rekom b {
+    position: relative;
+    top: -340px;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.rekom_produk .container-rekom {
+    margin-bottom: 43px;
+    margin-top: -278px;
+}
+
+.rekom_produk .container-rekom .card-big{
+    background-color: var(--Background-Stroke);
+    padding: 40px;
+    border-radius: 20px;
+    margin: 0 50px 0 50px;
+}
+
+.rekom_produk .container-rekom .card-big img {
+    margin-bottom: 35px;
+}
+
+.rekom_produk .container-rekom .card-big button {
+    background-color: var(--Button-tertiary);
+    color: var(--Background-Stroke);
+    border-radius: 25px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.rekom_produk .container-rekom .card-small{
+    background-color: var(--Background-Stroke);
+    padding: 34px;
+    border-radius: 20px;
+    margin: 0 50px 0 50px;
+    height: fit-content;
+}
+
+.rekom_produk .container-rekom .card-small img {
+    margin-bottom: 35px;
+}
+
+.rekom_produk .container-rekom .card-small button {
+    background-color: var(--Button-tertiary);
+    color: var(--Background-Stroke);
+    border-radius: 25px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.rekom_produk .nav-rekom ul li {
+    margin: 0 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.rekom_produk .nav-rekom ul li a,
+.rekom_produk .nav-rekom ul li span{
+    border-radius: 100% !important;
+    padding: 7px !important;
+    background-color: var(--Question-SkinTest-NotFocused);
+}
+
+.rekom_produk .nav-rekom ul li span.active {
+    background-color: var(--Background-Stroke);
+}
+
+/* SkinType Result */
+
 /* Footer */
 
 footer {
