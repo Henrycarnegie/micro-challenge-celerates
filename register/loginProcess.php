@@ -1,6 +1,7 @@
 <?php
     session_start();
     include "config.php";
+    $_SESSION["login_failed"] = false;
 
     if (isset($_POST["login"])) {
         //check input from user to database

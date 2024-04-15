@@ -55,21 +55,21 @@
                         <div class="d-grid">
                             <button type="submit" name="login" class="btn btn-primary">Submit</button>
                         </div>
-                    <div id='loginFailedModal' class='login-failed hide'>
-                        <div class='icon'>
-                            <i class='fa-solid fa-check'></i>
+                        <div id='loginFailedModal' class='login-failed hide'>
+                            <div class='icon'>
+                                <i class='fa-solid fa-check'></i>
+                            </div>
+                            <h1>Failed!!</h1>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, at.</span>
                         </div>
-                        <h1>Failed!!</h1>
-                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, at.</span>
-                    </div>
-                    <?php 
-                        if ( $_SESSION["login_failed"] === true) {
-                            echo "sudah di klik login";
-                            echo "<script>showModal();</script>";
-                        } else {
-                            echo "belum di klik login";
-                        }
-                    ?>
+                        <?php 
+                            if ( $_SESSION["login_failed"] === true) {
+                                echo "sudah di klik login";
+                                echo "<script>showModal();</script>";
+                            } else {
+                                echo "belum di klik login";
+                            }
+                        ?>
                     </form>
                 </div>
                 <div class="col-4 img-login">
