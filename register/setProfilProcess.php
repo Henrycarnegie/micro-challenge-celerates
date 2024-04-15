@@ -19,7 +19,7 @@
             }
         }
 
-        $updateData =  "UPDATE users SET age = '$age' WHERE name = '$name' ";
+        $updateData =  "UPDATE users SET age = '$age' AND gender = '$gender' WHERE name = '$name' ";
 
         if ($db->query($updateData)) {
             echo "Berhasil";

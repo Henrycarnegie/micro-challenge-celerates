@@ -6,8 +6,9 @@
                 <div class="detail col-12 col-lg-6">
                     <?php if (!isset($_SESSION["email"])) : ?>
                         <h1>Belum Login</h1>
-                    <?php else : ?>
-                        <h1>Sudah Login</h1>
+                        <?php var_dump($_SESSION["email"])?>
+                        <?php else : ?>
+                            <h1>Sudah Login</h1>
                     <?php endif ?>
                     <div class="item">
                         <span>Nama</span>

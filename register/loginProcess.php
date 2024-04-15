@@ -1,6 +1,7 @@
 <?php
     session_start();
     include "config.php";
+    
 
     if (isset($_POST["login"])) {
         //check input from user to database
@@ -12,13 +13,12 @@
         $result = $db->query($inputData);
 
         if ($result->num_rows > 0) {
-            
-
-            $_SESSION["name"] = $name;
+            $data = $result->fetch_assoc();
+            $_SESSION["name"] = $data["name"];
             $_SESSION["email"] = $data["email"];
             $_SESSION["is_login"] = true;
-            $_SESSION["login_failed"] = false;
-
+            $_SESSION["login_failed"] == false;
+            
             header("location: ../profil.php");
             exit();
             $db->close();

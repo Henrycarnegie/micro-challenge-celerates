@@ -1,5 +1,5 @@
 <?php
-    require "signupProcess.php";
+require "loginProcess.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,7 +37,17 @@
             </div>
             <form action="setProfilProcess.php" method="post" class="col-10 bg-content d-flex flex-column ">
                 <div class="col-10 mb-3">
-                    <input type="text" class="form-control" name="name" disabled placeholder= '<?php echo $_SESSION["name"] ?>' >
+                    <!-- ... -->
+                    <div class="col-10 mb-3">
+                        <?php if (isset($_SESSION["name"])) : ?>
+                            <input type="text" class="form-control" value="<?php echo $_SESSION["name"]; ?>" disabled>
+                        <?php else : ?>
+                            <input type="text" class="form-control" placeholder="--" disabled>
+                        <?php endif; ?>
+                    </div>
+                    <!-- ... -->
+
+
                 </div>
                 <div class="col-10 mb-3">
                     <input type="text" class="form-control" name="age" placeholder="masukan umur anda contoh: 22">

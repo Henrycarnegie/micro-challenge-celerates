@@ -31,9 +31,8 @@
         $inputData = "INSERT INTO users (name, email, password) VALUES ('$name', '$email', '$password')";
 
         if ($db->query($inputData)) {
-            $data = $result->fetch_assoc();
-            $name = $data["name"];
             $_SESSION["name"] = $name;
+            $_SESSION["is_signup"] = true;
             echo "Berhasil";
             header("location: setProfil.php");
             exit();

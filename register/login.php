@@ -1,6 +1,5 @@
 <?php
     session_start();
-    $_SESSION["login_failed"] = false;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    
+
     <script src="../assets/js/script.js"></script>
 </head>
 
@@ -63,8 +62,8 @@
                             <h1>Failed!!</h1>
                             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, at.</span>
                         </div>
-                        <?php 
-                            if ( $_SESSION["login_failed"] === true) {
+                        <?php
+                            if ($_SESSION["login_failed"] == true) {
                                 echo "sudah di klik login";
                                 echo "<script>showModal();</script>";
                             } else {
