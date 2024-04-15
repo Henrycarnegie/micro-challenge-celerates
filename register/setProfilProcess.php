@@ -1,11 +1,11 @@
 <?php
-    include "config.php";
-    include "signupProcess.php";
     session_start();
+    include "config.php";
+    $name;
 
     if(isset ($_POST["setProfil"])) {
-        $age = $_POST["age"];
 
+        $age = $_POST["age"];
         if (isset ($_POST["gender"] )) {
             if (isset ($_POST["gender"] ) && !$_POST["gender"] == "checked") {
                 $gender = "laki-laki";
@@ -19,8 +19,9 @@
             }
         }
 
-        $inputData =  "INSERT INTO users (age, gender) VALUES ('$age', '$gender')";
-        if ($db->query($inputData)) {
+        $updateData =  "UPDATE users SET age = '$age' WHERE name = '$name' ";
+
+        if ($db->query($updateData)) {
             echo "Berhasil";
             header("location: login.php");
             exit();

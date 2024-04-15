@@ -1,5 +1,6 @@
 <?php
     session_start();
+    $_SESSION["login_failed"] = false;
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -1,7 +1,7 @@
 <?php
-    include "config.php";
     session_start();
-    
+    include "config.php";
+
     if (isset($_POST["signup"])) {
         if (empty($_POST["name"])) {
             die("Name is required");
@@ -31,6 +31,9 @@
         $inputData = "INSERT INTO users (name, email, password) VALUES ('$name', '$email', '$password')";
 
         if ($db->query($inputData)) {
+            $data = $result->fetch_assoc();
+            $name = $data["name"];
+            $_SESSION["name"] = $name;
             echo "Berhasil";
             header("location: setProfil.php");
             exit();

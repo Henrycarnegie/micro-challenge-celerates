@@ -1,7 +1,6 @@
 <?php
-session_start();
+    require "signupProcess.php";
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,7 +37,7 @@ session_start();
             </div>
             <form action="setProfilProcess.php" method="post" class="col-10 bg-content d-flex flex-column ">
                 <div class="col-10 mb-3">
-                    <input type="text" class="form-control" name="name" placeholder='<?php echo $_SESSION["name"] ?>' disabled>
+                    <input type="text" class="form-control" name="name" disabled placeholder= '<?php echo $_SESSION["name"] ?>' >
                 </div>
                 <div class="col-10 mb-3">
                     <input type="text" class="form-control" name="age" placeholder="masukan umur anda contoh: 22">

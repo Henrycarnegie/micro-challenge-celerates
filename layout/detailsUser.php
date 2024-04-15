@@ -11,7 +11,13 @@
                     <?php endif ?>
                     <div class="item">
                         <span>Nama</span>
-                        <input type="text" class="form-control" placeholder= '<?php echo $_SESSION["name"] ?>' disabled>
+                        <?php if ( isset($_SESSION["is_login"]) == true ) : ?>
+                            <input type="text" class="form-control" 
+                            placeholder= '<?php echo $_SESSION["name"] ?>' 
+                            disabled>
+                            <?php else :?>
+                                <input type="text" class="form-control" placeholder= '--' disabled>
+                        <?php endif ?>
                     </div>
                     <div class="detail-collapse d-flex justify-content-between">
                         <div class="item col-12 col-lg-6 me-4">

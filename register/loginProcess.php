@@ -1,7 +1,6 @@
 <?php
     session_start();
     include "config.php";
-    $_SESSION["login_failed"] = false;
 
     if (isset($_POST["login"])) {
         //check input from user to database
@@ -13,8 +12,7 @@
         $result = $db->query($inputData);
 
         if ($result->num_rows > 0) {
-            $data = $result->fetch_assoc();
-            $name = $data["name"];
+            
 
             $_SESSION["name"] = $name;
             $_SESSION["email"] = $data["email"];
