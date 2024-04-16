@@ -1232,8 +1232,18 @@ section .visi_misi {
 
 /* SkinType Landing */
 
+.skintype-landing {
+    background-image: url(../images/background/Body-Bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
 .skintype-landing .text-content {
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 10px;
 }
 
@@ -1243,6 +1253,7 @@ section .visi_misi {
     font-weight: 800;
     line-height: normal;
     text-align: center;
+    color: var(--Highlight-Secondary);
 }
 
 .skintype-landing .content-body h2 {
@@ -1270,6 +1281,11 @@ section .visi_misi {
     width: 300px;
     height: 250px;
     margin-left: 20px;
+    margin-bottom: 100px;
+}
+
+.skintype-landing .card-1 .card .card-img-top {
+    border-radius: 5px;
 }
 
 .skintype-landing .card-1 .card .card-body .card-title {
@@ -1278,8 +1294,8 @@ section .visi_misi {
     font-weight: 600;
     line-height: normal;
     position:absolute;
-    top: 120%;
-    left: 15%;
+    top: 60%;
+    left: 25%;
     color: #000;
 }
 
@@ -1291,9 +1307,117 @@ section .visi_misi {
     line-height: normal;
     color: #000;
     position: absolute;
-    top: 153%;
+    top: 73%;
+    left: 10%;
     right: 10%;
 }
+
+.skintype-landing .card-2 .card {
+    background-color: var(--Button-tertiary);
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    height: 250px;
+    margin-left: 20px;
+}
+
+.skintype-landing .card-2 .card .card-img-top {
+    border-radius: 5px;
+}
+
+.skintype-landing .card-2 .card .card-body .card-title {
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position:absolute;
+    top: 60%;
+    left: 14%;
+    color: #000;
+}
+
+.skintype-landing .card-2 .card .card-body .card-text {
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #000;
+    position: absolute;
+    top: 73%;
+    right: 10%;
+    left: 10%;
+}
+
+.skintype-landing .card-3 .card {
+    background-color: var(--Button-tertiary);
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    height: 250px;
+    margin-left: 20px;
+}
+
+.skintype-landing .card-3 .card .card-img-top {
+    border-radius: 5px;
+}
+
+.skintype-landing .card-3 .card .card-body .card-title {
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position:absolute;
+    top: 60%;
+    left: 9%;
+    color: #000;
+}
+
+.skintype-landing .card-3 .card .card-body .card-text {
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #000;
+    position: absolute;
+    top: 73%;
+    right: 10%;
+    left: 10%;
+}
+
+.skintype-landing-question .question {
+    margin-top: 0px;
+}
+
+.skintype-landing-question .question h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.skintype-landing-question .question .flex-column {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.skintype-landing-question .question .flex-column span{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.skintype-landing-question .btn-hasil {
+    margin-bottom: 100px;
+    position: relative;
+    margin-left: 350px;
+}
+
 
 
 /* SkinType Landing */
