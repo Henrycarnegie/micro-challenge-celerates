@@ -60,14 +60,17 @@
                             <h1>Failed!!</h1>
                             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, at.</span>
                         </div>
-                        <?php
+                        <?php 
                             require "loginProcess.php";
                             if ($_SESSION["is_login"] == false) {
-                                echo "<script>showModal();</script>";
-                                $_SESSION["is_login"] = true;
+                            echo "<script>
+                                showModal();
+                            </script>";
+                            $_SESSION["is_login"] = true;
                             }
                         ?>
                     </form>
+
                 </div>
                 <div class="col-4 img-login">
                     <img src="../assets/images/content/3d_login.png" alt=>

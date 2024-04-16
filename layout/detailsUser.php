@@ -6,27 +6,27 @@
                 <div class="detail col-12 col-lg-6">
                     <?php if (!isset($_SESSION["email"])) : ?>
                         <h1>Belum Login</h1>
-                        <?php var_dump($_SESSION["email"])?>
-                        <?php else : ?>
-                            <h1>Sudah Login</h1>
+                    <?php else : ?>
+                        <h1>Sudah Login</h1>
                     <?php endif ?>
                     <div class="item">
                         <span>Nama</span>
-                        <?php if ( isset($_SESSION["is_login"]) == true ) : ?>
-                            <input type="text" class="form-control" 
-                            placeholder= '<?php echo $_SESSION["name"] ?>' 
-                            disabled>
-                            <?php else :?>
-                                <input type="text" class="form-control" placeholder= '--' disabled>
+                        <?php if (isset($_SESSION["is_login"]) == true) : ?>
+                            <input type="text" class="form-control" placeholder='<?php echo $_SESSION["name"] ?>' disabled>
+                        <?php else : ?>
+                            <input type="text" class="form-control" placeholder='--' disabled>
                         <?php endif ?>
                     </div>
+                    <!-- select Gender from database -->
                     <div class="detail-collapse d-flex justify-content-between">
                         <div class="item col-12 col-lg-6 me-4">
                             <span>Jenis Kelamin</span>
                             <select class="form-select" aria-label="Default select example" disabled>
-                                <option value="1">Pilih</option>
-                                <option value="2" selected>Laki-laki</option>
-                                <option value="3">Perempuan</option>
+                                <?php if (isset($_SESSION["is_login"]) == true) : ?>
+                                    <option value="1"><?php echo $_SESSION["gender"]?></option>
+                                <?php else : ?>
+                                    <option value="1">--</option>
+                                <?php endif ?>
                             </select>
                         </div>
                         <div class="item col-12 col-lg-5">
@@ -34,17 +34,31 @@
                             <input type="text" class="form-control" placeholder="Oily" disabled>
                         </div>
                     </div>
+                    <!-- select Age from database -->
                     <div class="item">
                         <span>Umur</span>
-                        <input type="text" class="form-control" placeholder="24" disabled>
+                        <?php if (isset($_SESSION["is_login"]) == true) : ?>
+                            <input type="text" class="form-control" placeholder='<?php echo $_SESSION["age"] ?>' disabled>
+                        <?php else : ?>
+                            <input type="text" class="form-control" placeholder='--' disabled>
+                        <?php endif ?>
                     </div>
+                    <!-- select Email from database -->
                     <div class="item">
                         <span>Email</span>
-                        <input type="text" class="form-control" placeholder="henrycarnegie@gmail.com" disabled>
+                        <?php if (isset($_SESSION["is_login"]) == true) : ?>
+                            <input type="text" class="form-control" placeholder='<?php echo $_SESSION["email"] ?>' disabled>
+                        <?php else : ?>
+                            <input type="text" class="form-control" placeholder='--' disabled>
+                        <?php endif ?>
                     </div>
                     <div class="item">
                         <span>Password</span>
-                        <input type="text" class="form-control" placeholder="******" disabled>
+                        <?php if (isset($_SESSION["is_login"]) == true) : ?>
+                            <input type="text" class="form-control" placeholder='******' disabled>
+                        <?php else : ?>
+                            <input type="text" class="form-control" placeholder='--' disabled>
+                        <?php endif ?>
                     </div>
                     <div class="container-btn d-flex">
                         <button type="button" class="btn btn-primary me-2"><i class="fa-solid fa-pencil me-2"></i>Edit</button>

@@ -1,25 +1,18 @@
 <?php
     session_start();
     include "config.php";
-    $name;
 
-    if(isset ($_POST["setProfil"])) {
-
+    if(isset($_POST["setProfil"])) {
         $age = $_POST["age"];
-        if (isset ($_POST["gender"] )) {
-            if (isset ($_POST["gender"] ) && !$_POST["gender"] == "checked") {
-                $gender = "laki-laki";
-                echo "LAKIIII";
-                var_dump($_POST["gender"]);
-            } 
-            if ($_POST["gender"] == "checked") {
-                $gender = "perempuan";
-                echo "perempuan";
-                var_dump($_POST["gender"]);
-            }
-        }
+        
+        // Pemeriksaan gender
+        $gender = isset($_POST["gender"]) && $_POST["gender"] == "checked" ? "perempuan" : "laki-laki";
 
-        $updateData =  "UPDATE users SET age = '$age' AND gender = '$gender' WHERE name = '$name' ";
+        // Escape $_SESSION["name"] untuk menghindari SQL injection
+        $name = $db->real_escape_string($_SESSION["name"]);
+
+        // Query SQL
+        $updateData = "UPDATE users SET age = '$age', gender = '$gender' WHERE name = '$name'";
 
         if ($db->query($updateData)) {
             echo "Berhasil";
@@ -28,6 +21,7 @@
         } else {
             echo "Data gagal dimasukan";
         }
-        $db -> close();
+
+        $db->close();
     }
 ?>
