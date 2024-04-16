@@ -37,17 +37,11 @@ require "loginProcess.php";
             </div>
             <form action="setProfilProcess.php" method="post" class="col-10 bg-content d-flex flex-column ">
                 <div class="col-10 mb-3">
-                    <!-- ... -->
-                    <div class="col-10 mb-3">
-                        <?php if (isset($_SESSION["name"])) : ?>
-                            <input type="text" class="form-control" value="<?php echo $_SESSION["name"]; ?>" disabled>
-                        <?php else : ?>
-                            <input type="text" class="form-control" placeholder="--" disabled>
-                        <?php endif; ?>
-                    </div>
-                    <!-- ... -->
-
-
+                    <?php if (isset($_SESSION["name"])) : ?>
+                        <input type="text" class="form-control" value="<?php echo $_SESSION["name"]; ?>" disabled>
+                    <?php else : ?>
+                        <input type="text" class="form-control" placeholder="--" disabled>
+                    <?php endif; ?>
                 </div>
                 <div class="col-10 mb-3">
                     <input type="text" class="form-control" name="age" placeholder="masukan umur anda">

@@ -56,22 +56,7 @@
     <?php include "layout/productCarousel.html" ?>
 
     <!-- Top Brand -->
-    <section class="top-brand pb-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 d-flex justify-content-center align-items-center flex-column">
-                    <div class="title col-lg-8 d-flex flex-column text-center">
-                        <h1>Merek Teratas untuk Kulit Anda</h1>
-                        <span>Merek-merek top dalam industri perawatan kulit</span>
-                    </div>
-                    <div class="col-6 container-brand d-flex justify-content-center align-items-center">
-                        <img src="assets/images/content/slider-1.png" alt="brand 1" class="img-fluid">
-                        <img src="assets/images/content/slider-2.png" alt="brand 1" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php include "layout/topBrand.html" ?>
     <!-- Top Brand -->
 
     <!-- Section FAQ-->
