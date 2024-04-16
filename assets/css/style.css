@@ -177,7 +177,12 @@ header.header{
     color: var(--Background-Stroke);
     font-size: 14px;
 }
-
+.header .dropdown-item.active, .dropdown-item:active {
+    background-color: inherit;
+    text-decoration: none;
+    color: #1e2125;
+    background-color: #e9ecef;
+}
 .header .right-container .dropdown button.btn-register:hover:active {
     background-color: var(--Background-Stroke);
     border: var(--Background-Stroke);
@@ -620,12 +625,20 @@ section.new-product {
     margin-bottom: 35px;
 }
 
-.new-product .container-product .card-big button,
+.new-product .container-product .card-big button {
+    background-color: var(--Button-tertiary);
+    color: var(--Background-Stroke);
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
 .new-product .container-product .card-small button {
     background-color: var(--Button-tertiary);
     color: var(--Background-Stroke);
     border-radius: 25px;
-    font-size: 24px;
+    font-size: 14px;
     font-weight: 600;
     text-align: center;
 }

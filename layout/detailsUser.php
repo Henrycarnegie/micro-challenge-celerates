@@ -4,6 +4,7 @@
         <div class="row">
             <div class="content col-lg-12 d-flex justify-content-between">
                 <div class="detail col-12 col-lg-6">
+                    <!-- Nama -->
                     <div class="item">
                         <span>Nama</span>
                         <?php if (isset($_SESSION["is_login"]) == true) : ?>
@@ -12,24 +13,29 @@
                             <input type="text" class="form-control" placeholder='--' disabled>
                         <?php endif ?>
                     </div>
-                    <!-- select Gender from database -->
                     <div class="detail-collapse d-flex justify-content-between">
+                        <!-- Gender -->
                         <div class="item col-12 col-lg-6 me-4">
                             <span>Jenis Kelamin</span>
                             <select class="form-select" aria-label="Default select example" disabled>
                                 <?php if (isset($_SESSION["is_login"]) == true) : ?>
-                                    <option value="1"><?php echo $_SESSION["gender"]?></option>
+                                    <option value="1"><?php echo $_SESSION["gender"] ?></option>
                                 <?php else : ?>
                                     <option value="1">--</option>
                                 <?php endif ?>
                             </select>
                         </div>
+                        <!-- Tipe Kulit -->
                         <div class="item col-12 col-lg-5">
                             <span>Tipe Kulit</span>
-                            <input type="text" class="form-control" placeholder="Oily" disabled>
+                            <?php if (isset($_SESSION["is_login"]) == true) : ?>
+                            <input type="text" class="form-control" placeholder='kering' disabled>
+                        <?php else : ?>
+                            <input type="text" class="form-control" placeholder='--' disabled>
+                        <?php endif ?>
                         </div>
                     </div>
-                    <!-- select Age from database -->
+                    <!-- Umur -->
                     <div class="item">
                         <span>Umur</span>
                         <?php if (isset($_SESSION["is_login"]) == true) : ?>
@@ -38,7 +44,7 @@
                             <input type="text" class="form-control" placeholder='--' disabled>
                         <?php endif ?>
                     </div>
-                    <!-- select Email from database -->
+                    <!-- Email -->
                     <div class="item">
                         <span>Email</span>
                         <?php if (isset($_SESSION["is_login"]) == true) : ?>
@@ -47,6 +53,7 @@
                             <input type="text" class="form-control" placeholder='--' disabled>
                         <?php endif ?>
                     </div>
+                    <!-- Password -->
                     <div class="item">
                         <span>Password</span>
                         <?php if (isset($_SESSION["is_login"]) == true) : ?>
