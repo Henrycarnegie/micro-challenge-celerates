@@ -4,11 +4,6 @@
         <div class="row">
             <div class="content col-lg-12 d-flex justify-content-between">
                 <div class="detail col-12 col-lg-6">
-                    <?php if (!isset($_SESSION["email"])) : ?>
-                        <h1>Belum Login</h1>
-                    <?php else : ?>
-                        <h1>Sudah Login</h1>
-                    <?php endif ?>
                     <div class="item">
                         <span>Nama</span>
                         <?php if (isset($_SESSION["is_login"]) == true) : ?>

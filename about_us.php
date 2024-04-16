@@ -33,8 +33,8 @@
     <!-- Tampilan awal -->
     <section class="main-content">
         <div class="container">
-            <div class="row">
-                <div class="content col-lg-12 d-flex align-items-center justify-content-between">
+            <div class="row d-flex justify-content-center">
+                <div class="content col-lg-10 d-flex align-items-center justify-content-around">
                     <div class="icon-besar col-lg-5">
                         <img class="img-fluid" style="width: 75%; height: 80%; border-radius: 50%"
                             src="assets/images/icon/icon_besar.png" />
@@ -42,13 +42,14 @@
 
                     <div class="title-beauty col-lg-4 d-flex align-items-center">                     
                         <div class="text-start">
-                            <h1>Beauty</h1>  
-                        <h5>Platform media yang dibuat khusus
-                            memenuhi segala hal kecantikan, website ini bertujuan
+                            <h1 class="mb-3">Beauty</h1>
+                            <h5 class="mb-3">Skincare platform</h5>  
+                            <h6>Platform media yang dibuat khusus
+                            memenuhi segala hal kecantikan,<span> website ini bertujuan
                             menginspirasi wanita & pria Indonesia Untuk merawat diri dan
-                            dapat percaya diri dengan kulitnya sendiri serta membantu mengetahui
+                            dapat percaya diri dengan kulitnya sendiri</span> serta membantu mengetahui
                             jenis kulit seseorang dan memberikan rekomendasi produk yang
-                            sesuai dengan jenis kulitnya </h5>
+                            sesuai dengan jenis kulitnya </h6>
                         </div>
                     </div>
                 </div>
@@ -61,31 +62,29 @@
         <div class="container-fluid">
             <div class="row"> 
                 <div class="col-lg-12 d-flex justify-content-center">
-                    <div class="col-10 title-visimisi p-4 d-flex justify-content-center">
+                    <div class="col-12 title-visimisi p-4 d-flex justify-content-center">
                         <div class="title-visi col-lg-4 align-self-start">
                             <h1>Visi :</h1>
-                            <h5>Menjadi perusahaan perawatan kulit
+                            <h6>Menjadi perusahaan perawatan kulit
                                 terdepan yang menginspirasi dan memberdayakan
                                 semua orang untuk merasa percaya diri dengan
-                                kecantikan alami mereka</h5>
+                                kecantikan alami mereka</h6>
                         </div>
                         <div class="title-misi col-lg-4 align-self-end">
                             <h1>Misi :</h1>
-                            <h5>Merekomendasikan produk skincare sesuai 
+                            <h6>Merekomendasikan produk skincare sesuai 
                                 dengan type kulit dan Memberikan edukasi dan 
                                 informasi yang bermanfaat tentang kesehatan dan 
-                                kecantikan kulit</h5>
+                                kecantikan kulit</h6>
                         </div>             
                         <div class="pose_male col-lg-4">
-                            <img class="img-fluid" style="width: 100%; height: 100%; border-radius: 50%"
-                                    src="assets/images/icon/pose_male.png" />
+                            <img class="img-fluid" src="assets/images/icon/pose_male.png" />
                         </div>
-                    </div>
                     </div>
                 </div>
             </div>
-            
         </div>
+
     </section>
     <!-- Tampilan visi misi -->
     
