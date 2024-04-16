@@ -1413,12 +1413,14 @@ section .visi_misi {
     backdrop-filter: blur(30px);
 }
 
+
 .main-content .box_kering {
     position: relative;
-    top: 600px;
+    top: 620px;
+    right: 17px;
     width: 1175px;
     height: 1411px;
-    transform: rotate(0.259deg);
+    transform: rotate(0.230deg);
     flex-shrink: 0;
     border-radius: 25px;
     border: 1px solid rgba(0, 0, 0, 0.25);
@@ -1429,7 +1431,8 @@ section .visi_misi {
 
 .main-content .text_kering {
     position: relative;
-    top: -700px;
+    top: -735px;
+    text-align: center;
 }
 
 .text_kering h3 {
@@ -1440,17 +1443,18 @@ section .visi_misi {
     text-align: center;
 }
 
-.text_kering h1 {
-    font-size: 60px;
+.text_kering b {
+    font-size: 65px;
     font-style: normal;
-    font-weight: 450;
+    font-weight: 800;
     line-height: normal;
     text-align: center;
+    
 }
 
 .kering_img {
     position: relative;
-    top: -680px;
+    top: -710px;
     display: inline-flex;
     padding: 20px;
     flex-direction: column;
@@ -1465,10 +1469,21 @@ section .visi_misi {
 
 .deskripsi {
     position: relative;
-    top: -630px;
+    top: -680px;
     left: 40px;
-    width: 800px;
+    width: 890px;
 }
+
+.deskripsi .p2 {
+    position: relative;
+    top: 16px;
+}
+
+.deskripsi .p3 {
+    position: relative;
+    top: 32px;
+}
+
 
 .deskripsi b {
     text-align: justify;
