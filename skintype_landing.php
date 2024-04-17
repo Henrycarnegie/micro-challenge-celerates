@@ -307,7 +307,7 @@
                             </div>
                         </div>
                     </div>
-                    <button type="button" class="btn-hasil"><img src="assets/images/icon/btn-hasil.png" alt="skintype-landing"></button>
+                    <button type="button" class="btn-hasil"><a href="skintype_result.php"><img src="assets/images/icon/btn-hasil.png" alt="skintype-landing"></a></button>
                 </div>
             </div>
         </div>

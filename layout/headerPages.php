@@ -60,7 +60,7 @@ if (isset($_POST["btn-account"])) {
                     <ul class="list-group pe-2">
                         <li class="list-group-item"><a href="index.php">Beranda</a></li>
                         <li class="list-group-item"><a href="about_us.php">Tentang</a></li>
-                        <li class="list-group-item"><a href="skintype_landing.html">Test Kulit</a></li>
+                        <li class="list-group-item"><a href="skintype_landing.php">Test Kulit</a></li>
                     </ul>
                     <div class="dropdown">
                         <button class="btn btn-register dropdown-toggle" name="btn-account" type="button" id="dropdownMenuAccount" data-bs-toggle="dropdown" aria-expanded="false">
