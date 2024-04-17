@@ -22,63 +22,9 @@
         rel="stylesheet">
 </head>
 <body>
-     <!-- Navigation Bar -->
-     <header class="header fixed-top">
-        <nav class="col-12 navbar">
-            <div class="col-12 col-lg-6 left-container d-flex justify-content-center align-items-center">
-                <img class="me-3 icon-web" src="assets/images/icon/icon-web.png" alt="logo-web">
-                <div class="searchbar col-12 col-lg-6">
-                    <form action="#" class="col-10">
-                        <div class="d-flex align-items-center px-2">
-                            <i class="fa fa-search"></i></button>
-                            <input id="openSearchbar" class="form-control" type="email"
-                                placeholder="Cari produk anda disini ...">
-                        </div>
-                    </form>
-                    <div id="modalOpen" class="overlay hide col-4">
-                        <div class="recommendation">
-                            <a href="search_result.html" class="product-img">
-                                <img src="assets/images/content/recom_item1.png" alt="" class="img-fluid me-2">
-                            </a>
-                            <a href="search_result.html" class="product-name">
-                                <h6>Toner "The Originote"</h6>
-                                <span>mengandung Ceraluronic Essence</span>
-                            </a>
-                        </div>
-                        <div class="recommendation">
-                            <a href="search_result.html" class="product-img">
-                                <img src="assets/images/content/recom_item1.png" alt="" class="img-fluid me-2">
-                            </a>
-                            <a href="search_result.html" class="product-name">
-                                <h6>Toner "The Originote"</h6>
-                                <span>mengandung Ceraluronic Essence</span>
-                            </a>
-                        </div>
-                        <div class="recommendation">
-                            <a href="search_result.html" class="product-img">
-                                <img src="assets/images/content/recom_item1.png" alt="" class="img-fluid me-2">
-                            </a>
-                            <a href="search_result.html" class="product-name">
-                                <h6>Toner "The Originote"</h6>
-                                <span>mengandung Ceraluronic Essence</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 right-container d-flex justify-content-center align-items-center">
-                <ul class="list-group pe-2">
-                    <li class="list-group-item"><a href="/index.html">Beranda</a></li>
-                    <li class="list-group-item"><a href="about_us.html">Tentang Kami</a></li>
-                    <li class="list-group-item"><a href="profil.html">Profil</a></li>
-                    <li class="list-group-item"><a href="#">Test Kulit Anda</a></li>
-                </ul>
-                <a href="register/signup.html" class="btn-register">
-                    <button type="button" class="btn btn-primary"><i class="me-2 fa-regular fa-user"></i>Masuk</button>
-                </a>
-            </div>
-        </nav>
-    </header>
+    <!-- Header -->
+    <?php include "layout/headerPages.php"?>
+    <!-- Header -->
 
 
     <section class="main-content">
@@ -128,95 +74,11 @@
         </div>
     </section>
 
-    <section class="rekom_produk">
-        <div class="container">
-            <div class="row">
-                <div class="text_rekom d-flex justify-content-center ">
-                    <b>Rekomendasi Produk</b>
-                </div>
-                <div class="container-rekom col-lg-12 d-flex justify-content-center align-items-center">
-                    <div class="card-small d-flex flex-column">
-                        <img src="assets/images/content/new_product_1.png" alt="new product">
-                        <button type="button" class="btn btn-primary">Preview</button>
-                    </div>
-                    <div class="card-big d-flex flex-column">
-                        <img src="assets/images/content/new_product_2.png" alt="new product">
-                        <button type="button" class="btn btn-primary">Preview</button>
-                    </div>
-                    <div class="card-small d-flex flex-column">
-                        <img src="assets/images/content/new_product_3.png" alt="new product">
-                        <button type="button" class="btn btn-primary">Preview</button>
-                    </div>
-                </div>
-                <nav aria-label="...." class="nav-rekom">
-                    <ul class="pagination pagination-lg d-flex align-items-center justify-content-center ">
-                        <li class="page-item" aria-current="page">
-                            <a class="page-link" href="#"></a>
-                        </li>
-                        <li class="page-item">
-                            <span class="page-link active"></span>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="#"></a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="#"></a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </section>
+    <?php include "layout/productCarousel.html" ?>
 
-    
-
-     <!-- Footer -->  
-     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="content col-12 d-flex justify-content-around">
-                    <div class="col-3 detail px-4 align-items-center">
-                        <div class="name-web mb-4">
-                            <img src="assets/images/icon/icon-web.png" alt="" class="me-4">
-                            <span>Beautyy</span>
-                        </div>
-                        <div class="desc">
-                            <span>Kecantikan tidak hanya datang dari dalam tetapi juga datang dari luar. Jadi, Anda juga
-                                perlu menjaga kesehatan kulit Anda</span>
-                        </div>
-                    </div>
-                    <div class="col-2 navigasi">
-                        <h2 class="mx-4">Navigasi</h2>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="profil.html">Profil</a></li>
-                            <li><a href="about_us.html">About Us</a></li>
-                            <li><a href="#">Test Skin Type</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-4 temukan">
-                        <h2 class="mx-4">Temukan Lainnya</h2>
-                        <ul>
-                            <li><a href="#">Brand</a></li>
-                            <li><a href="#">Product</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-2 tentang">
-                        <h2 class="mx-4">About Us</h2>
-                        <ul>
-                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <div class="copyright">
-        <span>Copyright © 2024 All Right Reserved</span>
-    </div>
-    <!-- Footer -->
+    <!-- Foooter -->
+    <?php include "layout/footer.html" ?>
+    <!-- Foooter -->
 
     <script src="assets/js/script.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>

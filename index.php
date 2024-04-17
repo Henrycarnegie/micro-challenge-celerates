@@ -39,7 +39,7 @@
                         <span>Produk skincare yang bagus sebaiknya mampu menjaga kesehatan dan penampilan
                             kulitmu. Seharusnya mengandung bahan-bahan yang efektif dan aman untuk digunakan. Temukan semua rekomendasi produk di sini!</span>
                         <div class="btn-test">
-                            <a href="skintype_landing.html">
+                            <a href="skintype_landing.php">
                                 <button type="button" class="btn btn-primary">Test Tipe Kulit</button>
                             </a>
                         </div>
