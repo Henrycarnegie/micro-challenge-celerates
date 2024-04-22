@@ -1028,6 +1028,8 @@ section.my-fav {
 /* FAQ */
 
 section.FAQ {
+    position: relative;
+    top: 15px;
     background-image: url(../images/background/bg-faqlah.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1121,7 +1123,7 @@ section.FAQ {
 
 .notify_me {
     position: absolute;
-    top: 559%;
+    bottom: -1%;
     width: 850px;
     height: 190px;  
     flex-shrink: 0;
