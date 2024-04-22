@@ -1046,7 +1046,7 @@ section.FAQ {
     font-weight: 700;
     line-height: normal;
     margin-bottom: 120px;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .FAQ .accordion-flush .accordion-item {
@@ -1121,26 +1121,28 @@ section.FAQ {
 
 .notify_me {
     position: absolute;
-    top: 555%;
-}
-
-.notify_me .notify {
-    justify-content: center;
-    text-align: center;
+    top: 559%;
     width: 850px;
     height: 190px;  
     flex-shrink: 0;
     border-radius: 20px;
     border: 1px solid rgba(217, 217, 217, 0.50);
-    background: linear-gradient(93deg, rgba(28, 186, 218, 0.461) 0%, rgba(19, 133, 183, 0.84) 100%);
+    background: linear-gradient(93deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.02) 100%);
     box-shadow: 0px 0px 30px -1px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(30px);
 }
 
+.notify {
+    position: relative;
+    top: 76px;
+    right: -123px;
+}
+
 .text_notify {
     justify-content: center;
-    position: relative;
-    top: -50px;
+    text-align: center;
+    margin-top: -80px;
+    margin-right: -180px;
 }
 
 .text_notify h1  {
@@ -1164,7 +1166,26 @@ section.FAQ {
 .input_email {
     position: relative;
     top: 30px;
-    right: 500px;
+    right: 310px;
+    display: flex;
+    width: 286px;
+    height: 44px;
+    padding: 11px 14px;
+    gap: 10px;
+    border-radius: 20px;
+    background: var(--headline-secondary, #FFFFFE);
+
+}
+
+.button_input {
+    position: relative;
+    top: 30px;
+    right: 290px;
+    display: inline-flex;
+    padding: 3px 15px;
+    border-radius: 30px;
+    background: var(--button-tertiary, #EEBBC3);
+    
 }
 /* notify me */
 

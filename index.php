@@ -78,13 +78,12 @@
                                 <div id="flush-collapseOne" class="accordion-collapse collapse"
                                     aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body custom-text-align">
-                                        <span>Langkah-langkah dasar perawatan kulit yang bear meliputi pembersihan,
-                                            eksfoliasi, pelembapan, dan perlindungan matahari. Gunakan pembersih yang
-                                            lembut sesuai dengan jenis kulit Anda, lalu gunakan produk eksfoliasi yang
-                                            mengandung AHA atau BHA beberapa kali seminggu. Selain itu, jangan lupa
-                                            untuk
-                                            menggunakan pelembap setiap har dan produk perlindungan matahari dengan
-                                            SPF minimal 30.</span>
+                                        <span>Mengenal jenis tipe kulit adalah penting karena membantu Anda 
+                                            mengidentifikasi dan memilih produk skincare yang tepat sesuai 
+                                            dengan kebutuhan kulit Anda. Setiap tipe kulit memiliki masalah khas, 
+                                            dan menggunakan sabun pembersih wajah yang tidak sesuai dengan jenis kulit 
+                                            Anda dapat mengakibatkan efek samping seperti iritasi. Selain itu, memahami tipe 
+                                            kulit Anda juga membantu Anda mengidentifikasi gejalanya dan menentukan cara mengatasinya.</span>
                                     </div>
                                 </div>
                             </div>
@@ -116,19 +115,20 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseThree" aria-expanded="false"
                                         aria-controls="flush-collapseThree">
-                                        <span>Bagaimana cara merawat kulit saya dengan benar?</span>
+                                        <span>Bagaimana cara mengetahui produk perawatan yang cocok untuk kulit saya?</span>
                                     </button>
                                 </h2>
                                 <div id="flush-collapseThree" class="accordion-collapse collapse"
                                     aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
-                                        <span>Langkah-langkah dasar perawatan kulit yang bear meliputi pembersihan,
-                                            eksfoliasi, pelembapan, dan perlindungan matahari. Gunakan pembersih yang
-                                            lembut sesuai dengan jenis kulit Anda, lalu gunakan produk eksfoliasi yang
-                                            mengandung AHA atau BHA beberapa kali seminggu. Selain itu, jangan lupa
-                                            untuk
-                                            menggunakan pelembap setiap har dan produk perlindungan matahari dengan
-                                            SPF minimal 30.</span>
+                                        <span>Untuk mengetahui produk perawatan yang cocok untuk kulit Anda, ada beberapa 
+                                            langkah yang bisa Anda lakukan. Pertama, penting untuk mengidentifikasi jenis kulit 
+                                            Anda dengan baik, apakah itu berminyak, kering, kombinasi, atau sensitif. Setelah itu,
+                                             coba lakukan tes produk dengan menggunakan sampel kecil terlebih dahulu sebelum membeli 
+                                             produk dalam ukuran penuh. Perhatikan bagaimana kulit Anda bereaksi setelah penggunaan, 
+                                             apakah ada iritasi atau reaksi negatif lainnya. Selanjutnya, perhatikan bahan-bahan yang
+                                              terdapat dalam produk tersebut. Pilihlah produk yang mengandung bahan-bahan yang cocok untuk 
+                                              jenis kulit Anda.</span>
                                     </div>
                                 </div>
                             </div>
@@ -168,7 +168,10 @@
                         <h3 class="j2">Jangan lewatkan sesuatu yang baru dari kami</h3>
                     </div>
                     <div class="input_email">
-                        <input type="text" placeholder="usename@gmail.com" required>
+                        <input type="text" placeholder="username@gmail.com" required>
+                    </div>
+                    <div class="button_input">
+                        <input class="btn" type="submit" value="Kirim">
                     </div>
                 </div>
             </div>
