@@ -72,7 +72,7 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseOne" aria-expanded="false"
                                         aria-controls="flush-collapseOne">
-                                        <span>Bagaimana cara merawat kulit saya dengan benar?</span>
+                                        <span>Mengapa penting untuk mengetahui jenis tipe kulit kita?</span>
                                     </button>
                                 </h2>
                                 <div id="flush-collapseOne" class="accordion-collapse collapse"
@@ -159,9 +159,26 @@
                 </div>
             </div>
         </div>
+        <section class="notify_me"> 
+        <div class="container">
+            <div class="row">
+                <div class="notify col-12 d-flex align-items-center">
+                    <div class="text_notify text-center">
+                        <h1 class="j1">Dapatkan Pembaruan Dari Mana Saja</h1>
+                        <h3 class="j2">Jangan lewatkan sesuatu yang baru dari kami</h3>
+                    </div>
+                    <div class="input_email">
+                        <input type="text" placeholder="usename@gmail.com" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     </section>
     <!--Section FAQ-->
 
+    
     <!-- Foooter -->
     <?php include "layout/footer.html" ?>
     <!-- Foooter -->
