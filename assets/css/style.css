@@ -1028,6 +1028,8 @@ section.my-fav {
 /* FAQ */
 
 section.FAQ {
+    position: relative;
+    top: 15px;
     background-image: url(../images/background/bg-faqlah.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1046,7 +1048,7 @@ section.FAQ {
     font-weight: 700;
     line-height: normal;
     margin-bottom: 120px;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .FAQ .accordion-flush .accordion-item {
@@ -1114,6 +1116,81 @@ section.FAQ {
     }
 }
 /* FAQ */
+
+/* ======================================== */
+
+/* notify me */
+
+.notify_me {
+    position: absolute;
+    bottom: -1%;
+    left: 27.5%;
+    width: 45%;
+    height: 18%;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid rgba(217, 217, 217, 0.50);
+    background: linear-gradient(93deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.02) 100%);
+    box-shadow: 0px 0px 30px -1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(30px);
+}
+
+.notify {
+    position: relative;
+    top: 76px;
+    right: -123px;
+}
+
+.text_notify {
+    justify-content: center;
+    text-align: center;
+    margin-top: -80px;
+    margin-right: -180px;
+}
+
+.text_notify h1  {
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--Highlight-Secondary);
+}
+
+.text_notify h3  {
+    
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--Highlight-Secondary);
+}
+
+.input_email {
+    position: relative;
+    top: 30px;
+    right: 310px;
+    display: flex;
+    width: 286px;
+    height: 44px;
+    padding: 11px 14px;
+    gap: 10px;
+    border-radius: 20px;
+    background: var(--headline-secondary, #FFFFFE);
+
+}
+
+.button_input {
+    position: relative;
+    top: 30px;
+    right: 290px;
+    display: inline-flex;
+    padding: 3px 15px;
+    border-radius: 30px;
+    background: var(--button-tertiary, #EEBBC3);
+    
+}
+/* notify me */
 
 /* ======================================== */
 
