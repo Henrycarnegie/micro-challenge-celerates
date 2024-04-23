@@ -27,9 +27,9 @@
     <?php include "layout/headerPages.php" ?>
     <!-- Navigation Bar -->
     
-    <!-- Navigation Bar -->
+    <!-- Profile -->
     <?php include "layout/detailsUser.php" ?>
-    <!-- Navigation Bar -->
+    <!-- Profile -->
 
     <section class="my-fav">
         <div class="container">

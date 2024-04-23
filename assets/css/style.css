@@ -471,6 +471,16 @@ section.setProfil {
 
 /* ======================================== */
 
+/* Overlay Edit Profile */
+
+section.profil .modal-content .modal-header {
+    border-bottom: none;
+}
+
+
+
+/* ======================================== */
+
 /* Main Content (index) */
 
 section.main-content {
