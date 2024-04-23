@@ -1124,8 +1124,9 @@ section.FAQ {
 .notify_me {
     position: absolute;
     bottom: -1%;
-    width: 850px;
-    height: 190px;  
+    left: 27.5%;
+    width: 45%;
+    height: 18%;
     flex-shrink: 0;
     border-radius: 20px;
     border: 1px solid rgba(217, 217, 217, 0.50);
