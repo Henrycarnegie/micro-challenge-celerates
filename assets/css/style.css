@@ -473,10 +473,107 @@ section.setProfil {
 
 /* Overlay Edit Profile */
 
-section.profil .modal-content .modal-header {
+section.profil .modal-dialog {
+    max-width: 900px;
+    max-height: 1000px;
+}
+
+.modal {
+    z-index: 1;
+}
+
+.profil .modal-content {
+    background-image: url(../images/background/overlay-edit-profil.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 850px;
+    width: 900px;
+    position: relative;
+    background-color: transparent;
+    border: 0px;
+    padding: 0px;
+    border-radius: 18px;
+    z-index: -1;
+}
+
+.modal-content .modal-header {
     border-bottom: none;
 }
 
+.modal-content .modal-header {
+    align-content: center;
+}
+
+
+.modal-content .modal-header h5{
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 380px;
+}
+
+.modal-content .modal-header .btn-close {
+    background: transparent url(../images/icon/btn-close.png) center / 1em auto no-repeat;
+}
+
+.modal-content .modal-header .btn-close span {
+    color: var(--headline-secondary, #FFFFFE);
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.modal-body {
+    padding: 0rem;
+}
+
+.modal-body .item {
+    margin-left: 270px;
+    margin-bottom: -9px;
+}
+
+.modal-body .item-1 {
+    margin-left: 270px;
+    margin-bottom: 0px;
+}
+
+.modal-body .item span {
+    font-size: 14px;
+}
+
+.modal-body .item-1 span {
+    font-size: 14px;
+}
+
+.modal-body .form-control {
+    margin-bottom: 12px;
+}
+
+.modal-backdrop {
+    z-index: -1;
+}
+
+section.profil .modal-content .modal-footer {
+    border-top: none;
+    align-items: center;
+    align-content: center;
+}
+
+.modal-footer {
+    justify-content: center;
+}
+
+.modal-footer .btn-secondary {
+    color: #fff;
+    background-color: var(--ButtonText);
+    border-color: var(--ButtonText);
+    width: 300px;
+    border-radius: 20px;
+}
 
 
 /* ======================================== */

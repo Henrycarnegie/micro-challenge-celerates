@@ -67,18 +67,35 @@
                         Edit
                         </button>
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
+                            <div class="modal-dialog modal-dialog-scrollable">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Isilah kolom berikut</h5>
+                                        <h5>Isilah kolom berikut</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                    ...
+                                        <div class="item-1 col-5">
+                                            <span>Nama</span>
+                                            <input class="form-control form-control-sm" type="text" placeholder="Masukkan Nama" aria-label=".form-control-sm example">
+                                        </div>
+                                        <div class="item col-3">
+                                        <span>Jenis Kelamin</span>
+                                            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                                <option selected>Laki-laki</option>
+                                                <option value="1">Perempuan</option>
+                                            </select>
+                                        </div>
+                                        <div class="item col-5">
+                                            <span>Umur</span>
+                                            <input class="form-control form-control-sm" type="text" placeholder="Masukkan Umur" aria-label=".form-control-sm example">
+                                            <span>Kata sandi</span>
+                                            <input class="form-control form-control-sm" type="text" placeholder="Masukkan Umur" aria-label=".form-control-sm example">
+                                            <span>Konfirmasi Kata sandi</span>
+                                            <input class="form-control form-control-sm" type="text" placeholder="Masukkan Umur" aria-label=".form-control-sm example">
+                                        </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> <span>Simpan Perubahan</span></button>
                                     </div>
                                 </div>
                             </div>
