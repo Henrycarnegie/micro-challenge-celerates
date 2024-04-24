@@ -423,6 +423,71 @@ header.header{
 
 /* ======================================== */
 
+/* Forgot_Pass */
+
+.forgot_pass {
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 60%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--Background-Stroke);
+    border-radius: 20px;
+    border: 0.8px solid var(--Background-Stroke);
+}
+
+.icon_pass {
+    width: 400px;
+    height: 300px;
+    flex-shrink: 0;   
+}
+
+.text_pass h3 {
+    color: var(--Highlight-Secondary);
+    text-align: center;
+    font-size: 15px;
+    width: 400px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.input_gmail input {
+    margin-top: 2%;
+    padding: 8px 12px;
+    display: flex;
+    font-size: 15px;
+    gap: 10px;
+    border-radius: 10px;
+    background: var(--headline-secondary, #FFFFFE);
+}
+
+.button_pass {
+    margin-top: 2%;
+    font-size: 15px;
+    display: flex;
+    width: 160.692px;
+    height: 32.503px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    padding: -20px -100px;
+    border-radius: 10px;
+    background: var(--button-tertiary, #EEBBC3);
+
+}
+
+/* Forgot_Pass */
+
+/* ======================================== */
+
 /* Set Profile */
 
 section.setProfil {
