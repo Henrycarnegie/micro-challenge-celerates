@@ -425,16 +425,14 @@ header.header{
 
 /* Forgot_Pass */
 
-.pass {
-    padding-top: 6%;
-}
-
 .forgot_pass {
     justify-content: center;
     align-items: center;
-    width: 800px;
-    height: 600px;
+    width: 50%;
+    height: 60%;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
     padding: 0;
     position: fixed;
     top: 50%;
@@ -461,14 +459,11 @@ header.header{
     line-height: normal;
 }
 
-.input_gmail {
+.input_gmail input {
     margin-top: 2%;
-    text-align: center;
+    padding: 8px 12px;
     display: flex;
     font-size: 15px;
-    width: 286px;
-    height: 44px;
-    padding: 11px 14px;
     gap: 10px;
     border-radius: 10px;
     background: var(--headline-secondary, #FFFFFE);
