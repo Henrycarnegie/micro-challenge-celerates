@@ -426,14 +426,14 @@ header.header{
 /* Forgot_Pass */
 
 .pass {
-    padding-top: 4%;
+    padding-top: 6%;
 }
 
 .forgot_pass {
     justify-content: center;
     align-items: center;
-    width: 791px;
-    height: 552px;
+    width: 800px;
+    height: 600px;
     flex-shrink: 0;
     padding: 0;
     position: fixed;
@@ -465,6 +465,7 @@ header.header{
     margin-top: 2%;
     text-align: center;
     display: flex;
+    font-size: 15px;
     width: 286px;
     height: 44px;
     padding: 11px 14px;
@@ -475,6 +476,7 @@ header.header{
 
 .button_pass {
     margin-top: 2%;
+    font-size: 15px;
     display: flex;
     width: 160.692px;
     height: 32.503px;
