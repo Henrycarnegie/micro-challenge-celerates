@@ -482,6 +482,10 @@ section.profil .modal-dialog {
     z-index: 1;
 }
 
+#exampleModal[style*="display: block;"] {
+    padding-right: 0 !important;
+}
+
 .profil .modal-content {
     background-image: url(../images/background/overlay-edit-profil.png);
     background-size: cover;
