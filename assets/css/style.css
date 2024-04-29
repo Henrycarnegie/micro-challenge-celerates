@@ -955,6 +955,7 @@ section.my-fav {
 .my-fav .container-fav .title,
 .my-fav .container-items .colomn-1{
     margin-top: 0px;
+    margin-bottom: 20px;
 }
 
 .my-fav .container-fav .title h1 {
@@ -976,6 +977,13 @@ section.my-fav {
     top: 10px;
     color: var(--Background-Stroke);
     text-align: left;
+    padding-bottom: 200px;
+    padding-right: 100px;
+    opacity: 0;
+}
+
+.my-fav .container-items .nama-item:hover {
+    opacity: 1;
 }
 
 .my-fav .container-items .nama-item h4 {
@@ -987,6 +995,16 @@ section.my-fav {
     font-size: 14px;
     font-weight: 400;
 }
+
+.my-fav .container-items .nama-item > * {
+    transform: translateX(-150px);
+    transition: transform 0.6s;
+}
+
+.my-fav .container-items .nama-item:hover > * {
+    transform: translateX(0px);
+}
+
 
 .my-fav .container-items button {
     border: 0;
